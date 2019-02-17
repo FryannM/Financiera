@@ -41,5 +41,11 @@ namespace Financiera
                 return;
             }
         }
+
+        private void btnMontoSimple_Click(object sender, EventArgs e)
+        {
+            Formularios.frmMontoSimple montosimple = new Formularios.frmMontoSimple();
+            montosimple.Show();
+        }
     }
 }

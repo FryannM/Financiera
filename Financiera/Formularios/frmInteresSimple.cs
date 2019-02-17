@@ -26,31 +26,64 @@ namespace Financiera.Formularios
         }
         private void   SelectTasa()
         {
-          
             switch (cbTipoTasa.SelectedItem.ToString().Trim())
 
             {
                 case "Mensual":
+                    if (txtTiempo.Text == "")  {
+                        txtTasaInteres.Text = (double.Parse(txtTasaInteres.Text) / 1).ToString();
+                    }
+                    else   {
+                        txtTiempo.Text = (double.Parse(txtTiempo.Text) / 1).ToString();
+                    }
+                    break;
 
-                    txtTiempo.Text = (double.Parse(txtTiempo.Text) / 1).ToString();
+                case "Quicenal":
+                    if (txtTiempo.Text == "")
+                    {
+                        txtTasaInteres.Text = (double.Parse(txtTasaInteres.Text) / 24).ToString();
+                    }
+                    else
+                    {
+                        txtTiempo.Text = (double.Parse(txtTiempo.Text) / 24).ToString();
+                    }
+
                     break;
                 case "Bimestral":
-                    txtTiempo.Text = (double.Parse(txtTiempo.Text) / 2).ToString();
+                    if (txtTiempo.Text == "") {
+                        txtTasaInteres.Text = (double.Parse(txtTasaInteres.Text) / 2).ToString();
+                    }
+                    else {
+                        txtTiempo.Text = (double.Parse(txtTiempo.Text) / 2).ToString();
+                    }
                     break;
-
-
                 case "Trimestral":
-                    txtTiempo.Text =  (double.Parse(txtTiempo.Text)/ 3).ToString();
-              
-
+                    if (txtTiempo.Text == "") {
+                        txtTasaInteres.Text = (double.Parse(txtTasaInteres.Text) / 3).ToString();
+                    }
+                    else  {
+                        txtTiempo.Text = (double.Parse(txtTiempo.Text) / 3).ToString();
+                    }
                     break;
 
                 case "Cuatrimestral":
-                    txtTiempo.Text = (double.Parse(txtTiempo.Text) / 4).ToString();
+                    if (txtTiempo.Text == "")  {
+                        txtTasaInteres.Text = (double.Parse(txtTasaInteres.Text) / 4).ToString();
+                    }
+                    else  {
+
+                        txtTiempo.Text = (double.Parse(txtTiempo.Text) / 4).ToString();
+                    }
                     break;
 
                 case "Anual":
+                     if (txtTiempo.Text == "") {
+                        txtTasaInteres.Text = (double.Parse(txtTasaInteres.Text) / 12).ToString();
+                    }
+                     else  {
+
                     txtTiempo.Text = (double.Parse(txtTiempo.Text) / 12).ToString();
+                    }
                     break;
                 default:
                     break;
@@ -73,8 +106,6 @@ namespace Financiera.Formularios
                     txtInteres.Enabled = false;
                     txtCapital.Enabled = true;
                     txtTasaInteres.Enabled = true;
-
-                  
 
                     btnInteres.Visible = true;
                     btnCapital.Visible = false;
@@ -106,6 +137,20 @@ namespace Financiera.Formularios
                     btnCapital.Visible = false;
                     btnTasaInteres.Visible = true;
                     btnTiempo.Visible = false;
+                    CleanTexbox();
+                    break;
+
+
+                case "Tiempo":
+                    txtTiempo.Enabled = false;
+                    txtTasaInteres.Enabled = true;
+                    txtCapital.Enabled = true;
+                    txtInteres.Enabled = true;
+
+                    btnInteres.Visible = false;
+                    btnCapital.Visible = false;
+                    btnTasaInteres.Visible = false;
+                    btnTiempo.Visible = true;
                     CleanTexbox();
                     break;
             }
@@ -152,7 +197,7 @@ namespace Financiera.Formularios
         }
         private void txtTasaInteres_KeyPress(object sender, KeyPressEventArgs e)
         {
-            util.util.ValidarSoloNumero(e);
+            //util.util.ValidarSoloNumero(e);
         }
         private void txtTiempo_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -178,6 +223,18 @@ namespace Financiera.Formularios
             capital = entidad.Capital = Convert.ToDouble(txtCapital.Text);
             result = CalcularServices.CalcularTasaInteres(interes, capital, tiempo);
 
+            Math.Pow(result, 0);
+
+            txtResultado.Text = result.ToString();
+        }
+
+        private void btnTiempo_Click(object sender, EventArgs e)
+        {
+            interes = entidad.Interes = Convert.ToDouble(txtInteres.Text);
+            tasaInteres = entidad.TasaInteres = Convert.ToDouble(txtTasaInteres.Text);
+            capital = entidad.Capital = Convert.ToDouble(txtCapital.Text);
+            result = CalcularServices.CalcularTiempo(interes, capital, tasaInteres );
+            result = result * 100;
             Math.Pow(result, 0);
 
             txtResultado.Text = result.ToString();
