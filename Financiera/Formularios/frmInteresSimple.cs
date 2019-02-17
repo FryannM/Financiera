@@ -13,9 +13,6 @@ namespace Financiera.Formularios
         public double tiempo;
         public  double interes;
 
-
-
-
         private Entidades.InteresSimple entidad { get; set; } = new Entidades.InteresSimple();
 
 
@@ -52,6 +49,10 @@ namespace Financiera.Formularios
 
                 case "Cuatrimestral":
                     txtTiempo.Text = (double.Parse(txtTiempo.Text) / 4).ToString();
+                    break;
+
+                case "Anual":
+                    txtTiempo.Text = (double.Parse(txtTiempo.Text) / 12).ToString();
                     break;
                 default:
                     break;
@@ -134,9 +135,6 @@ namespace Financiera.Formularios
 
             tiempo = entidad.Tiempo = Convert.ToDouble(txtTiempo.Text);
             
-             
-       
-        
                 result = CalcularServices.CalcularInteres(capital,tasaInteres,tiempo);
 
             Math.Pow(result, 0);
@@ -160,14 +158,14 @@ namespace Financiera.Formularios
         }
         private void txtTiempo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            util.util.ValidarSoloNumero(e);
+          //  util.util.ValidarSoloNumero(e);
         }
 
         private void btnCapital_Click(object sender, EventArgs e)
         {
             interes = entidad.Interes = Convert.ToDouble(txtInteres.Text);
             tasaInteres = entidad.TasaInteres = Convert.ToDouble(txtTasaInteres.Text);
-            tiempo = entidad.Tiempo = Convert.ToInt16(txtTiempo.Text);
+            tiempo = entidad.Tiempo = Convert.ToDouble(txtTiempo.Text);
             result = CalcularServices.CalcularCapital(interes, tasaInteres, tiempo);
 
             Math.Pow(result, 0);

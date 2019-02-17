@@ -19,9 +19,12 @@ namespace Financiera.Services
 
         public static double CalcularCapital(double interes, double tasainteres, double tiempo)
         {
-            //P =  I/it
-            var Capital = (interes / tasainteres * tiempo);
-            return Capital;
+            //P =  I/it 
+
+             
+            var cap = ( tasainteres/100) * (tiempo);
+            var capital = interes / cap;
+            return capital;
         }
 
     }
