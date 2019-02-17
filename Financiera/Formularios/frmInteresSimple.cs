@@ -170,5 +170,17 @@ namespace Financiera.Formularios
 
             txtResultado.Text = result.ToString();
         }
+
+        private void btnTasaInteres_Click(object sender, EventArgs e)
+        {
+            interes = entidad.Interes = Convert.ToDouble(txtInteres.Text);
+            tiempo = entidad.Tiempo = Convert.ToDouble(txtTiempo.Text);
+            capital = entidad.Capital = Convert.ToDouble(txtCapital.Text);
+            result = CalcularServices.CalcularTasaInteres(interes, capital, tiempo);
+
+            Math.Pow(result, 0);
+
+            txtResultado.Text = result.ToString();
+        }
     }
 }
