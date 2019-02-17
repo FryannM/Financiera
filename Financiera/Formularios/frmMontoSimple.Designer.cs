@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMontoSimple));
             this.label1 = new System.Windows.Forms.Label();
             this.lblcapital = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,13 +38,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbDescuento = new System.Windows.Forms.ComboBox();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblTiempo = new System.Windows.Forms.Label();
+            this.txtTiempo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 257);
+            this.label1.Location = new System.Drawing.Point(40, 188);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 21);
             this.label1.TabIndex = 38;
@@ -53,7 +56,7 @@
             // 
             this.lblcapital.AutoSize = true;
             this.lblcapital.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcapital.Location = new System.Drawing.Point(40, 217);
+            this.lblcapital.Location = new System.Drawing.Point(40, 159);
             this.lblcapital.Name = "lblcapital";
             this.lblcapital.Size = new System.Drawing.Size(94, 21);
             this.lblcapital.TabIndex = 37;
@@ -63,7 +66,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 184);
+            this.label2.Location = new System.Drawing.Point(40, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 21);
             this.label2.TabIndex = 36;
@@ -71,21 +74,21 @@
             // 
             // txtInteres
             // 
-            this.txtInteres.Location = new System.Drawing.Point(233, 255);
+            this.txtInteres.Location = new System.Drawing.Point(192, 186);
             this.txtInteres.Name = "txtInteres";
             this.txtInteres.Size = new System.Drawing.Size(187, 20);
             this.txtInteres.TabIndex = 35;
             // 
             // txtCapital
             // 
-            this.txtCapital.Location = new System.Drawing.Point(233, 215);
+            this.txtCapital.Location = new System.Drawing.Point(192, 157);
             this.txtCapital.Name = "txtCapital";
             this.txtCapital.Size = new System.Drawing.Size(187, 20);
             this.txtCapital.TabIndex = 34;
             // 
             // txtMonto
             // 
-            this.txtMonto.Location = new System.Drawing.Point(233, 182);
+            this.txtMonto.Location = new System.Drawing.Point(192, 131);
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(187, 20);
             this.txtMonto.TabIndex = 33;
@@ -94,7 +97,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 129);
+            this.label3.Location = new System.Drawing.Point(23, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(165, 21);
             this.label3.TabIndex = 32;
@@ -104,11 +107,10 @@
             // 
             this.cbDescuento.FormattingEnabled = true;
             this.cbDescuento.Items.AddRange(new object[] {
-            "Descuento Bancario",
-            "Suma Solicitada",
-            "Tasa Descuento",
-            "Tiempo"});
-            this.cbDescuento.Location = new System.Drawing.Point(233, 131);
+            "Capital",
+            "Monto",
+            "Interes"});
+            this.cbDescuento.Location = new System.Drawing.Point(192, 100);
             this.cbDescuento.Name = "cbDescuento";
             this.cbDescuento.Size = new System.Drawing.Size(187, 21);
             this.cbDescuento.TabIndex = 31;
@@ -117,17 +119,36 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(39, 68);
+            this.lblTitulo.Location = new System.Drawing.Point(39, 29);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(171, 31);
             this.lblTitulo.TabIndex = 30;
             this.lblTitulo.Text = "Monto Simple";
             // 
+            // lblTiempo
+            // 
+            this.lblTiempo.AutoSize = true;
+            this.lblTiempo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTiempo.Location = new System.Drawing.Point(40, 218);
+            this.lblTiempo.Name = "lblTiempo";
+            this.lblTiempo.Size = new System.Drawing.Size(67, 21);
+            this.lblTiempo.TabIndex = 40;
+            this.lblTiempo.Text = "Tiempo";
+            // 
+            // txtTiempo
+            // 
+            this.txtTiempo.Location = new System.Drawing.Point(192, 216);
+            this.txtTiempo.Name = "txtTiempo";
+            this.txtTiempo.Size = new System.Drawing.Size(187, 20);
+            this.txtTiempo.TabIndex = 39;
+            // 
             // frmMontoSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 428);
+            this.ClientSize = new System.Drawing.Size(447, 371);
+            this.Controls.Add(this.lblTiempo);
+            this.Controls.Add(this.txtTiempo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblcapital);
             this.Controls.Add(this.label2);
@@ -137,9 +158,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbDescuento);
             this.Controls.Add(this.lblTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMontoSimple";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frmMontoSimple";
+            this.Text = "MontoSimple";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,5 +177,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbDescuento;
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblTiempo;
+        private System.Windows.Forms.TextBox txtTiempo;
     }
 }
