@@ -43,9 +43,12 @@
             this.lblTiempo = new System.Windows.Forms.Label();
             this.txtTiempo = new System.Windows.Forms.TextBox();
             this.btnCapital = new System.Windows.Forms.Button();
-            this.BtnTasaInteres = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnTasaInteres = new System.Windows.Forms.Button();
+            this.btnTiempo = new System.Windows.Forms.Button();
             this.btnInteres = new System.Windows.Forms.Button();
+            this.cbTipoTasa = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtInteres
@@ -66,7 +69,7 @@
             // 
             // txtTasaInteres
             // 
-            this.txtTasaInteres.Location = new System.Drawing.Point(244, 208);
+            this.txtTasaInteres.Location = new System.Drawing.Point(244, 236);
             this.txtTasaInteres.Name = "txtTasaInteres";
             this.txtTasaInteres.Size = new System.Drawing.Size(187, 20);
             this.txtTasaInteres.TabIndex = 2;
@@ -106,7 +109,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(71, 210);
+            this.label1.Location = new System.Drawing.Point(71, 238);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(169, 21);
             this.label1.TabIndex = 6;
@@ -139,7 +142,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(71, 290);
+            this.label4.Location = new System.Drawing.Point(71, 338);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 21);
             this.label4.TabIndex = 10;
@@ -147,7 +150,7 @@
             // 
             // txtResultado
             // 
-            this.txtResultado.Location = new System.Drawing.Point(244, 290);
+            this.txtResultado.Location = new System.Drawing.Point(244, 338);
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(187, 20);
             this.txtResultado.TabIndex = 9;
@@ -156,7 +159,7 @@
             // 
             this.lblTiempo.AutoSize = true;
             this.lblTiempo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTiempo.Location = new System.Drawing.Point(71, 249);
+            this.lblTiempo.Location = new System.Drawing.Point(71, 212);
             this.lblTiempo.Name = "lblTiempo";
             this.lblTiempo.Size = new System.Drawing.Size(67, 21);
             this.lblTiempo.TabIndex = 12;
@@ -164,7 +167,7 @@
             // 
             // txtTiempo
             // 
-            this.txtTiempo.Location = new System.Drawing.Point(244, 247);
+            this.txtTiempo.Location = new System.Drawing.Point(244, 210);
             this.txtTiempo.Name = "txtTiempo";
             this.txtTiempo.Size = new System.Drawing.Size(187, 20);
             this.txtTiempo.TabIndex = 11;
@@ -172,34 +175,35 @@
             // 
             // btnCapital
             // 
-            this.btnCapital.Location = new System.Drawing.Point(171, 370);
+            this.btnCapital.Location = new System.Drawing.Point(66, 394);
             this.btnCapital.Name = "btnCapital";
             this.btnCapital.Size = new System.Drawing.Size(90, 51);
             this.btnCapital.TabIndex = 14;
             this.btnCapital.Text = "Capital";
             this.btnCapital.UseVisualStyleBackColor = true;
+            this.btnCapital.Click += new System.EventHandler(this.btnCapital_Click);
             // 
-            // BtnTasaInteres
+            // btnTasaInteres
             // 
-            this.BtnTasaInteres.Location = new System.Drawing.Point(267, 370);
-            this.BtnTasaInteres.Name = "BtnTasaInteres";
-            this.BtnTasaInteres.Size = new System.Drawing.Size(90, 51);
-            this.BtnTasaInteres.TabIndex = 15;
-            this.BtnTasaInteres.Text = "Tasa Interes";
-            this.BtnTasaInteres.UseVisualStyleBackColor = true;
+            this.btnTasaInteres.Location = new System.Drawing.Point(66, 394);
+            this.btnTasaInteres.Name = "btnTasaInteres";
+            this.btnTasaInteres.Size = new System.Drawing.Size(90, 51);
+            this.btnTasaInteres.TabIndex = 15;
+            this.btnTasaInteres.Text = "Tasa Interes";
+            this.btnTasaInteres.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnTiempo
             // 
-            this.button3.Location = new System.Drawing.Point(363, 370);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 51);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Tiempo";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnTiempo.Location = new System.Drawing.Point(66, 394);
+            this.btnTiempo.Name = "btnTiempo";
+            this.btnTiempo.Size = new System.Drawing.Size(90, 51);
+            this.btnTiempo.TabIndex = 16;
+            this.btnTiempo.Text = "Tiempo";
+            this.btnTiempo.UseVisualStyleBackColor = true;
             // 
             // btnInteres
             // 
-            this.btnInteres.Location = new System.Drawing.Point(68, 370);
+            this.btnInteres.Location = new System.Drawing.Point(66, 394);
             this.btnInteres.Name = "btnInteres";
             this.btnInteres.Size = new System.Drawing.Size(90, 51);
             this.btnInteres.TabIndex = 17;
@@ -207,14 +211,53 @@
             this.btnInteres.UseVisualStyleBackColor = true;
             this.btnInteres.Click += new System.EventHandler(this.btnInteres_Click);
             // 
+            // cbTipoTasa
+            // 
+            this.cbTipoTasa.FormattingEnabled = true;
+            this.cbTipoTasa.Items.AddRange(new object[] {
+            "Mensual",
+            "Bimestral",
+            "Trimestral",
+            "Cuatrimestral",
+            "Semestral",
+            "Anual"});
+            this.cbTipoTasa.Location = new System.Drawing.Point(244, 277);
+            this.cbTipoTasa.Name = "cbTipoTasa";
+            this.cbTipoTasa.Size = new System.Drawing.Size(187, 21);
+            this.cbTipoTasa.TabIndex = 18;
+            this.cbTipoTasa.SelectedIndexChanged += new System.EventHandler(this.cbTipoTasa_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(71, 277);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 21);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Tasa en ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(437, 212);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 21);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Meses";
+            // 
             // frmInteresSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(554, 496);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.cbTipoTasa);
             this.Controls.Add(this.btnInteres);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.BtnTasaInteres);
+            this.Controls.Add(this.btnTiempo);
+            this.Controls.Add(this.btnTasaInteres);
             this.Controls.Add(this.btnCapital);
             this.Controls.Add(this.lblTiempo);
             this.Controls.Add(this.txtTiempo);
@@ -254,8 +297,11 @@
         private System.Windows.Forms.Label lblTiempo;
         private System.Windows.Forms.TextBox txtTiempo;
         private System.Windows.Forms.Button btnCapital;
-        private System.Windows.Forms.Button BtnTasaInteres;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnTasaInteres;
+        private System.Windows.Forms.Button btnTiempo;
         private System.Windows.Forms.Button btnInteres;
+        private System.Windows.Forms.ComboBox cbTipoTasa;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

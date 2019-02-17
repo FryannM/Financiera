@@ -5,18 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Financiera.Services
+namespace Financiera.util
 {
-   public  static class DatamanagerServices 
+   public static  class util
     {
-        
-
-        public static  int CalcularInteres(int capital, int tasaInteres, int tiempo)
-        {
-            var Interes = (capital * tasaInteres * tiempo);
-            return Interes;
-        }
-
         public static void ValidarSoloNumero(KeyPressEventArgs e)
         {
 
@@ -31,13 +23,8 @@ namespace Financiera.Services
             }
             else
             {
-                
                 e.Handled = true;
             }
         }
-
-
-        
-
     }
 }

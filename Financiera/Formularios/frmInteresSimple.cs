@@ -2,26 +2,71 @@
 using System;
 using System.Windows.Forms;
 
+
 namespace Financiera.Formularios
 {
-    public partial class frmInteresSimple : Form  {
+    public partial class frmInteresSimple : Form
+    {
+        public double result = 0;
+        public  double capital;
+        public double tasaInteres;
+        public double tiempo;
+        public  double interes;
 
-        private readonly Interface.IInteresSimple _interesSimpleServices;
+
+
+
         private Entidades.InteresSimple entidad { get; set; } = new Entidades.InteresSimple();
 
 
         public frmInteresSimple()
         {
-           
+
             InitializeComponent();
         }
         private void frmInteresSimple_Load(object sender, EventArgs e)
         {
         }
+
+
+        private void   SelectTasa()
+        {
+          
+            switch (cbTipoTasa.SelectedItem.ToString().Trim())
+
+            {
+                case "Mensual":
+
+                    txtTiempo.Text = (double.Parse(txtTiempo.Text) / 1).ToString();
+                    break;
+                case "Bimestral":
+                    txtTiempo.Text = (double.Parse(txtTiempo.Text) / 2).ToString();
+                    break;
+
+
+                case "Trimestral":
+                    txtTiempo.Text =  (double.Parse(txtTiempo.Text)/ 3).ToString();
+              
+
+                    break;
+
+                case "Cuatrimestral":
+                    txtTiempo.Text = (double.Parse(txtTiempo.Text) / 4).ToString();
+                    break;
+                default:
+                    break;
+            }
+
+        }
+
+        private void cbTipoTasa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SelectTasa();
+        }
         private void EnableText(string cb)
         {
 
-           ;
+          
             switch (cbInteresSimple.SelectedItem.ToString().Trim())
             {
 
@@ -29,18 +74,40 @@ namespace Financiera.Formularios
                     txtInteres.Enabled = false;
                     txtCapital.Enabled = true;
                     txtTasaInteres.Enabled = true;
+
+                  
+
+                    btnInteres.Visible = true;
+                    btnCapital.Visible = false;
+                    btnTasaInteres.Visible = false;
+                    btnTiempo.Visible = false;
+                    CleanTexbox();
                     break;
 
                 case "Capital":
                     txtCapital.Enabled = false;
-                    txtTasaInteres.Enabled = true;
                     txtInteres.Enabled = true;
+                    txtTasaInteres.Enabled = true;
+
+
+                    txtInteres.Visible = true;
+                    btnInteres.Visible = false;
+                    btnCapital.Visible = true;
+                    btnTasaInteres.Visible = false;
+                    btnTiempo.Visible = false;
+                    CleanTexbox();
                     break;
 
                 case "Tasa de Interes":
                     txtTasaInteres.Enabled = false;
                     txtCapital.Enabled = true;
                     txtInteres.Enabled = true;
+
+                    btnInteres.Visible = false;
+                    btnCapital.Visible = false;
+                    btnTasaInteres.Visible = true;
+                    btnTiempo.Visible = false;
+                    CleanTexbox();
                     break;
             }
         }
@@ -50,13 +117,29 @@ namespace Financiera.Formularios
             EnableText(Cb);
         }
 
+        private void CleanTexbox()
+        {
+            txtCapital.Text = string.Empty;
+            txtInteres.Text = string.Empty;
+            txtResultado.Text = string.Empty;
+            txtTiempo.Text = string.Empty;
+            txtTasaInteres.Text = string.Empty;
+        }
+
         private void btnInteres_Click(object sender, EventArgs e)
         {
-            int capital = Convert.ToInt32(entidad.Capital = Convert.ToInt32(txtCapital.Text));
-            int tasaInteres = Convert.ToInt32(entidad.TasaInteres = Convert.ToInt32(txtTasaInteres.Text));
-            int tiempo = Convert.ToInt32(entidad.Tiempo = Convert.ToDecimal(txtTiempo.Text));
+         
+            capital = entidad.Capital = Convert.ToDouble(txtCapital.Text);
+            tasaInteres = entidad.TasaInteres = Convert.ToDouble(txtTasaInteres.Text);
+
+            tiempo = entidad.Tiempo = Convert.ToDouble(txtTiempo.Text);
+            
+             
        
-            var result = DatamanagerServices.CalcularInteres(capital, tasaInteres, tiempo);
+        
+                result = CalcularServices.CalcularInteres(capital,tasaInteres,tiempo);
+
+            Math.Pow(result, 0);
 
             txtResultado.Text = result.ToString();
 
@@ -64,21 +147,35 @@ namespace Financiera.Formularios
 
         private void txtInteres_KeyPress(object sender, KeyPressEventArgs e)
         {
-            DatamanagerServices.ValidarSoloNumero(e);
+            util.util.ValidarSoloNumero(e);
         }
 
         private void txtCapital_KeyPress(object sender, KeyPressEventArgs e)
         {
-            DatamanagerServices.ValidarSoloNumero(e);
+            util.util.ValidarSoloNumero(e);
         }
         private void txtTasaInteres_KeyPress(object sender, KeyPressEventArgs e)
         {
-            DatamanagerServices.ValidarSoloNumero(e);
+            util.util.ValidarSoloNumero(e);
         }
-
         private void txtTiempo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            DatamanagerServices.ValidarSoloNumero(e);
+            util.util.ValidarSoloNumero(e);
         }
+
+        private void btnCapital_Click(object sender, EventArgs e)
+        {
+            interes = entidad.Interes = Convert.ToDouble(txtInteres.Text);
+            tasaInteres = entidad.TasaInteres = Convert.ToDouble(txtTasaInteres.Text);
+            tiempo = entidad.Tiempo = Convert.ToInt16(txtTiempo.Text);
+            result = CalcularServices.CalcularCapital(interes, tasaInteres, tiempo);
+
+            Math.Pow(result, 0);
+
+            txtResultado.Text = result.ToString();
+        }
+
+
+       
     }
 }
