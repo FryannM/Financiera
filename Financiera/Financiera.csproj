@@ -68,7 +68,7 @@
     <Compile Include="Interface\IInteresSimple.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\CalcularServices.cs" />
+    <Compile Include="Services\DatamanagerServices.cs" />
     <EmbeddedResource Include="Formularios\frmInteresSimple.resx">
       <DependentUpon>frmInteresSimple.cs</DependentUpon>
     </EmbeddedResource>

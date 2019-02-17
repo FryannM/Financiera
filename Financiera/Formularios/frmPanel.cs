@@ -16,7 +16,7 @@ namespace Financiera
         {
             InitializeComponent();
         }
-
+       
         private void BtnInteresSimple_Click(object sender, EventArgs e)
         {
             Formularios.frmInteresSimple InteresSimple = new Formularios.frmInteresSimple();

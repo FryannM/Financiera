@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace Financiera.Interface
 {
-  public   interface IInteresSimple
+    public  interface IInteresSimple
     {
-
-
-
         int CalcularInteres(int capital,int tasaInteres,int tiempo);
-        void CalcularCapital();
-        void CalcularTiempo();
+        int CalcularCapital(int interes,int tasaInteres,int tiempo);
+        int CalcularTiempo(int  interes,int capital, int tasaInteres);
     }
 }
