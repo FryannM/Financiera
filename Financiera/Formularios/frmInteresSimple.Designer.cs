@@ -191,10 +191,11 @@
             this.btnTasaInteres.TabIndex = 15;
             this.btnTasaInteres.Text = "Tasa Interes";
             this.btnTasaInteres.UseVisualStyleBackColor = true;
+            this.btnTasaInteres.Click += new System.EventHandler(this.btnTasaInteres_Click);
             // 
             // btnTiempo
             // 
-            this.btnTiempo.Location = new System.Drawing.Point(66, 394);
+            this.btnTiempo.Location = new System.Drawing.Point(68, 394);
             this.btnTiempo.Name = "btnTiempo";
             this.btnTiempo.Size = new System.Drawing.Size(90, 51);
             this.btnTiempo.TabIndex = 16;
@@ -203,7 +204,7 @@
             // 
             // btnInteres
             // 
-            this.btnInteres.Location = new System.Drawing.Point(66, 394);
+            this.btnInteres.Location = new System.Drawing.Point(68, 394);
             this.btnInteres.Name = "btnInteres";
             this.btnInteres.Size = new System.Drawing.Size(90, 51);
             this.btnInteres.TabIndex = 17;
