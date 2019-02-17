@@ -11,7 +11,6 @@ namespace Financiera.util
     {
         public static void ValidarSoloNumero(KeyPressEventArgs e)
         {
-
             if (Char.IsDigit(e.KeyChar))
             {
                 e.Handled = false;
