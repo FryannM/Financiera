@@ -24,8 +24,6 @@ namespace Financiera.Formularios
         private void frmInteresSimple_Load(object sender, EventArgs e)
         {
         }
-
-
         private void   SelectTasa()
         {
           
@@ -172,8 +170,5 @@ namespace Financiera.Formularios
 
             txtResultado.Text = result.ToString();
         }
-
-
-       
     }
 }
