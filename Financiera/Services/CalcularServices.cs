@@ -23,5 +23,12 @@
             var Tinteres = (interes /CapitalxTiempo);
             return Tinteres;
         }
+
+        public static double CalcularTiempo(double interes, double capital, double tasainteres)
+        {
+            var CapitalxTasaInteres = capital * tasainteres;
+            var Tinteres = (interes / CapitalxTasaInteres);
+            return Tinteres;
+        }
     }
 }

@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPanel));
             this.BtnInteresSimple = new System.Windows.Forms.Button();
             this.BtnDescuentos = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnInteresSimple
             // 
-            this.BtnInteresSimple.Location = new System.Drawing.Point(72, 70);
+            this.BtnInteresSimple.Location = new System.Drawing.Point(171, 174);
             this.BtnInteresSimple.Name = "BtnInteresSimple";
             this.BtnInteresSimple.Size = new System.Drawing.Size(195, 80);
             this.BtnInteresSimple.TabIndex = 0;
@@ -45,7 +47,7 @@
             // 
             // BtnDescuentos
             // 
-            this.BtnDescuentos.Location = new System.Drawing.Point(289, 70);
+            this.BtnDescuentos.Location = new System.Drawing.Point(388, 174);
             this.BtnDescuentos.Name = "BtnDescuentos";
             this.BtnDescuentos.Size = new System.Drawing.Size(195, 80);
             this.BtnDescuentos.TabIndex = 1;
@@ -63,19 +65,33 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(381, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(419, 40);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Matematica Financiera 1430";
+            // 
             // frmPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 567);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.BtnDescuentos);
             this.Controls.Add(this.BtnInteresSimple);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPanel";
+            this.Opacity = 0.97D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Financiera";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -84,6 +100,7 @@
         private System.Windows.Forms.Button BtnInteresSimple;
         private System.Windows.Forms.Button BtnDescuentos;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -71,6 +71,9 @@
     <Compile Include="Services\CalcularServices.cs" />
     <Compile Include="util\Tasa.cs" />
     <Compile Include="util\util.cs" />
+    <EmbeddedResource Include="Formularios\frmDescuentos.resx">
+      <DependentUpon>frmDescuentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmInteresSimple.resx">
       <DependentUpon>frmInteresSimple.cs</DependentUpon>
     </EmbeddedResource>
