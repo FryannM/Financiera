@@ -59,6 +59,12 @@
     <Compile Include="Formularios\frmInteresSimple.Designer.cs">
       <DependentUpon>frmInteresSimple.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmMontoSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmMontoSimple.Designer.cs">
+      <DependentUpon>frmMontoSimple.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmInteresSimple.resx">
       <DependentUpon>frmInteresSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmMontoSimple.resx">
+      <DependentUpon>frmMontoSimple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPanel.resx">
       <DependentUpon>frmPanel.cs</DependentUpon>
