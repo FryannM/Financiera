@@ -241,7 +241,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDescuentos";
             this.Text = "frmDescuentos";
-            this.Load += new System.EventHandler(this.frmDescuentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtSumaSolicitada)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescuentoBancario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTasaDescuento)).EndInit();

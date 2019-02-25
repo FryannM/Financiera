@@ -343,7 +343,6 @@
             this.Name = "frmInteresSimple";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InteresSimple";
-            this.Load += new System.EventHandler(this.frmInteresSimple_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtInteres)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCapital)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTasaInteres)).EndInit();

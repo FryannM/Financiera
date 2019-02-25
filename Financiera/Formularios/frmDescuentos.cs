@@ -16,10 +16,5 @@ namespace Financiera.Formularios
         {
             InitializeComponent();
         }
-
-        private void frmDescuentos_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
