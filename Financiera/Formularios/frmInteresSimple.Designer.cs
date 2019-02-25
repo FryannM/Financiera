@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInteresSimple));
-            this.txtInteres = new System.Windows.Forms.TextBox();
-            this.txtCapital = new System.Windows.Forms.TextBox();
-            this.txtTasaInteres = new System.Windows.Forms.TextBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblcapital = new System.Windows.Forms.Label();
@@ -41,7 +38,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.lblTiempo = new System.Windows.Forms.Label();
-            this.txtTiempo = new System.Windows.Forms.TextBox();
             this.btnCapital = new System.Windows.Forms.Button();
             this.btnTasaInteres = new System.Windows.Forms.Button();
             this.btnTiempo = new System.Windows.Forms.Button();
@@ -49,31 +45,15 @@
             this.cbTipoTasa = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.txtInteres = new System.Windows.Forms.NumericUpDown();
+            this.txtCapital = new System.Windows.Forms.NumericUpDown();
+            this.txtTasaInteres = new System.Windows.Forms.NumericUpDown();
+            this.txtTiempo = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInteres)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCapital)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTasaInteres)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTiempo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtInteres
-            // 
-            this.txtInteres.Location = new System.Drawing.Point(244, 113);
-            this.txtInteres.Name = "txtInteres";
-            this.txtInteres.Size = new System.Drawing.Size(187, 20);
-            this.txtInteres.TabIndex = 0;
-            this.txtInteres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInteres_KeyPress);
-            // 
-            // txtCapital
-            // 
-            this.txtCapital.Location = new System.Drawing.Point(244, 142);
-            this.txtCapital.Name = "txtCapital";
-            this.txtCapital.Size = new System.Drawing.Size(187, 20);
-            this.txtCapital.TabIndex = 1;
-            this.txtCapital.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCapital_KeyPress);
-            // 
-            // txtTasaInteres
-            // 
-            this.txtTasaInteres.Location = new System.Drawing.Point(244, 201);
-            this.txtTasaInteres.Name = "txtTasaInteres";
-            this.txtTasaInteres.Size = new System.Drawing.Size(187, 20);
-            this.txtTasaInteres.TabIndex = 2;
-            this.txtTasaInteres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTasaInteres_KeyPress);
             // 
             // lblTitulo
             // 
@@ -166,14 +146,6 @@
             this.lblTiempo.TabIndex = 12;
             this.lblTiempo.Text = "Tiempo";
             // 
-            // txtTiempo
-            // 
-            this.txtTiempo.Location = new System.Drawing.Point(244, 173);
-            this.txtTiempo.Name = "txtTiempo";
-            this.txtTiempo.Size = new System.Drawing.Size(187, 20);
-            this.txtTiempo.TabIndex = 11;
-            this.txtTiempo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTiempo_KeyPress);
-            // 
             // btnCapital
             // 
             this.btnCapital.Location = new System.Drawing.Point(66, 298);
@@ -251,11 +223,106 @@
             this.label6.TabIndex = 20;
             this.label6.Text = "Meses";
             // 
+            // txtInteres
+            // 
+            this.txtInteres.DecimalPlaces = 2;
+            this.txtInteres.Location = new System.Drawing.Point(244, 113);
+            this.txtInteres.Maximum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            0});
+            this.txtInteres.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtInteres.Name = "txtInteres";
+            this.txtInteres.Size = new System.Drawing.Size(187, 20);
+            this.txtInteres.TabIndex = 2;
+            this.txtInteres.ThousandsSeparator = true;
+            this.txtInteres.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // txtCapital
+            // 
+            this.txtCapital.DecimalPlaces = 2;
+            this.txtCapital.Location = new System.Drawing.Point(244, 147);
+            this.txtCapital.Maximum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            0});
+            this.txtCapital.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtCapital.Name = "txtCapital";
+            this.txtCapital.Size = new System.Drawing.Size(187, 20);
+            this.txtCapital.TabIndex = 21;
+            this.txtCapital.ThousandsSeparator = true;
+            this.txtCapital.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // txtTasaInteres
+            // 
+            this.txtTasaInteres.DecimalPlaces = 2;
+            this.txtTasaInteres.Location = new System.Drawing.Point(244, 201);
+            this.txtTasaInteres.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.txtTasaInteres.Name = "txtTasaInteres";
+            this.txtTasaInteres.Size = new System.Drawing.Size(187, 20);
+            this.txtTasaInteres.TabIndex = 22;
+            this.txtTasaInteres.ThousandsSeparator = true;
+            this.txtTasaInteres.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // txtTiempo
+            // 
+            this.txtTiempo.DecimalPlaces = 2;
+            this.txtTiempo.Location = new System.Drawing.Point(244, 174);
+            this.txtTiempo.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.txtTiempo.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtTiempo.Name = "txtTiempo";
+            this.txtTiempo.Size = new System.Drawing.Size(187, 20);
+            this.txtTiempo.TabIndex = 23;
+            this.txtTiempo.ThousandsSeparator = true;
+            this.txtTiempo.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // frmInteresSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 377);
+            this.Controls.Add(this.txtTiempo);
+            this.Controls.Add(this.txtTasaInteres);
+            this.Controls.Add(this.txtCapital);
+            this.Controls.Add(this.txtInteres);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cbTipoTasa);
@@ -264,7 +331,6 @@
             this.Controls.Add(this.btnTasaInteres);
             this.Controls.Add(this.btnCapital);
             this.Controls.Add(this.lblTiempo);
-            this.Controls.Add(this.txtTiempo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.label3);
@@ -273,24 +339,21 @@
             this.Controls.Add(this.lblcapital);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.txtTasaInteres);
-            this.Controls.Add(this.txtCapital);
-            this.Controls.Add(this.txtInteres);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInteresSimple";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InteresSimple";
             this.Load += new System.EventHandler(this.frmInteresSimple_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.txtInteres)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCapital)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTasaInteres)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTiempo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtInteres;
-        private System.Windows.Forms.TextBox txtCapital;
-        private System.Windows.Forms.TextBox txtTasaInteres;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblcapital;
@@ -300,7 +363,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Label lblTiempo;
-        private System.Windows.Forms.TextBox txtTiempo;
         private System.Windows.Forms.Button btnCapital;
         private System.Windows.Forms.Button btnTasaInteres;
         private System.Windows.Forms.Button btnTiempo;
@@ -308,5 +370,9 @@
         private System.Windows.Forms.ComboBox cbTipoTasa;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.NumericUpDown txtInteres;
+        private System.Windows.Forms.NumericUpDown txtCapital;
+        private System.Windows.Forms.NumericUpDown txtTasaInteres;
+        private System.Windows.Forms.NumericUpDown txtTiempo;
     }
 }

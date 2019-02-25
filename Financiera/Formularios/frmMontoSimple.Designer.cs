@@ -32,14 +32,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblcapital = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtInteres = new System.Windows.Forms.TextBox();
-            this.txtCapital = new System.Windows.Forms.TextBox();
-            this.txtMonto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cbDescuento = new System.Windows.Forms.ComboBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblTiempo = new System.Windows.Forms.Label();
             this.txtTiempo = new System.Windows.Forms.TextBox();
+            this.txtCapital = new System.Windows.Forms.NumericUpDown();
+            this.txtMonto = new System.Windows.Forms.NumericUpDown();
+            this.txtInteres = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCapital)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMonto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInteres)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -71,27 +74,6 @@
             this.label2.Size = new System.Drawing.Size(92, 21);
             this.label2.TabIndex = 36;
             this.label2.Text = "Monto = S";
-            // 
-            // txtInteres
-            // 
-            this.txtInteres.Location = new System.Drawing.Point(192, 186);
-            this.txtInteres.Name = "txtInteres";
-            this.txtInteres.Size = new System.Drawing.Size(187, 20);
-            this.txtInteres.TabIndex = 35;
-            // 
-            // txtCapital
-            // 
-            this.txtCapital.Location = new System.Drawing.Point(192, 157);
-            this.txtCapital.Name = "txtCapital";
-            this.txtCapital.Size = new System.Drawing.Size(187, 20);
-            this.txtCapital.TabIndex = 34;
-            // 
-            // txtMonto
-            // 
-            this.txtMonto.Location = new System.Drawing.Point(192, 131);
-            this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(187, 20);
-            this.txtMonto.TabIndex = 33;
             // 
             // label3
             // 
@@ -142,19 +124,91 @@
             this.txtTiempo.Size = new System.Drawing.Size(187, 20);
             this.txtTiempo.TabIndex = 39;
             // 
+            // txtCapital
+            // 
+            this.txtCapital.DecimalPlaces = 2;
+            this.txtCapital.Location = new System.Drawing.Point(192, 160);
+            this.txtCapital.Maximum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            0});
+            this.txtCapital.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtCapital.Name = "txtCapital";
+            this.txtCapital.Size = new System.Drawing.Size(187, 20);
+            this.txtCapital.TabIndex = 41;
+            this.txtCapital.ThousandsSeparator = true;
+            this.txtCapital.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // txtMonto
+            // 
+            this.txtMonto.DecimalPlaces = 2;
+            this.txtMonto.Location = new System.Drawing.Point(192, 132);
+            this.txtMonto.Maximum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            0});
+            this.txtMonto.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(187, 20);
+            this.txtMonto.TabIndex = 42;
+            this.txtMonto.ThousandsSeparator = true;
+            this.txtMonto.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // txtInteres
+            // 
+            this.txtInteres.DecimalPlaces = 2;
+            this.txtInteres.Location = new System.Drawing.Point(192, 191);
+            this.txtInteres.Maximum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            0});
+            this.txtInteres.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtInteres.Name = "txtInteres";
+            this.txtInteres.Size = new System.Drawing.Size(187, 20);
+            this.txtInteres.TabIndex = 43;
+            this.txtInteres.ThousandsSeparator = true;
+            this.txtInteres.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // frmMontoSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 371);
+            this.Controls.Add(this.txtInteres);
+            this.Controls.Add(this.txtMonto);
+            this.Controls.Add(this.txtCapital);
             this.Controls.Add(this.lblTiempo);
             this.Controls.Add(this.txtTiempo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblcapital);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtInteres);
-            this.Controls.Add(this.txtCapital);
-            this.Controls.Add(this.txtMonto);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbDescuento);
             this.Controls.Add(this.lblTitulo);
@@ -162,6 +216,9 @@
             this.Name = "frmMontoSimple";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MontoSimple";
+            ((System.ComponentModel.ISupportInitialize)(this.txtCapital)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMonto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInteres)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,13 +228,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblcapital;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtInteres;
-        private System.Windows.Forms.TextBox txtCapital;
-        private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbDescuento;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblTiempo;
         private System.Windows.Forms.TextBox txtTiempo;
+        private System.Windows.Forms.NumericUpDown txtCapital;
+        private System.Windows.Forms.NumericUpDown txtMonto;
+        private System.Windows.Forms.NumericUpDown txtInteres;
     }
 }
