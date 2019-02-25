@@ -21,9 +21,6 @@ namespace Financiera.Formularios
 
             InitializeComponent();
         }
-        private void frmInteresSimple_Load(object sender, EventArgs e)
-        {
-        }
         private void   SelectTasa()
         {
             switch (cbTipoTasa.SelectedItem.ToString().Trim())
