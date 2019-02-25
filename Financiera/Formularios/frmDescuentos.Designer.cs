@@ -33,6 +33,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbDescuentoSimple = new System.Windows.Forms.ComboBox();
             this.panelCampos = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbTipoTasa = new System.Windows.Forms.ComboBox();
+            this.btnSumaSolicitada = new System.Windows.Forms.Button();
+            this.btnTasaDescuento = new System.Windows.Forms.Button();
+            this.btnDescuento = new System.Windows.Forms.Button();
+            this.btnTiempo = new System.Windows.Forms.Button();
             this.txtTiempo = new System.Windows.Forms.NumericUpDown();
             this.txtTasaDescuento = new System.Windows.Forms.NumericUpDown();
             this.txtDescuentoBancario = new System.Windows.Forms.NumericUpDown();
@@ -42,11 +48,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblcapital = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panelResultado = new System.Windows.Forms.Panel();
+            this.txtResultado = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
             this.panelCampos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTiempo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTasaDescuento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescuentoBancario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSumaSolicitada)).BeginInit();
+            this.panelResultado.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtResultado)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -87,6 +98,12 @@
             // 
             // panelCampos
             // 
+            this.panelCampos.Controls.Add(this.label5);
+            this.panelCampos.Controls.Add(this.cbTipoTasa);
+            this.panelCampos.Controls.Add(this.btnSumaSolicitada);
+            this.panelCampos.Controls.Add(this.btnTasaDescuento);
+            this.panelCampos.Controls.Add(this.btnDescuento);
+            this.panelCampos.Controls.Add(this.btnTiempo);
             this.panelCampos.Controls.Add(this.txtTiempo);
             this.panelCampos.Controls.Add(this.txtTasaDescuento);
             this.panelCampos.Controls.Add(this.txtDescuentoBancario);
@@ -96,11 +113,80 @@
             this.panelCampos.Controls.Add(this.label1);
             this.panelCampos.Controls.Add(this.lblcapital);
             this.panelCampos.Controls.Add(this.label2);
-            this.panelCampos.Location = new System.Drawing.Point(33, 151);
+            this.panelCampos.Controls.Add(this.panelResultado);
+            this.panelCampos.Location = new System.Drawing.Point(27, 143);
             this.panelCampos.Name = "panelCampos";
-            this.panelCampos.Size = new System.Drawing.Size(489, 287);
+            this.panelCampos.Size = new System.Drawing.Size(510, 306);
             this.panelCampos.TabIndex = 36;
             this.panelCampos.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(117, 152);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 21);
+            this.label5.TabIndex = 53;
+            this.label5.Text = "Tasa en ";
+            // 
+            // cbTipoTasa
+            // 
+            this.cbTipoTasa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTipoTasa.FormattingEnabled = true;
+            this.cbTipoTasa.Items.AddRange(new object[] {
+            "Mensual",
+            "Bimestral",
+            "Trimestral",
+            "Cuatrimestral",
+            "Semestral",
+            "Anual",
+            "Quincenal"});
+            this.cbTipoTasa.Location = new System.Drawing.Point(225, 151);
+            this.cbTipoTasa.Name = "cbTipoTasa";
+            this.cbTipoTasa.Size = new System.Drawing.Size(187, 21);
+            this.cbTipoTasa.TabIndex = 52;
+            this.cbTipoTasa.SelectedIndex = cbTipoTasa.Items.IndexOf("Mensual");
+            // 
+            // btnSumaSolicitada
+            // 
+            this.btnSumaSolicitada.Location = new System.Drawing.Point(414, 188);
+            this.btnSumaSolicitada.Name = "btnSumaSolicitada";
+            this.btnSumaSolicitada.Size = new System.Drawing.Size(90, 51);
+            this.btnSumaSolicitada.TabIndex = 46;
+            this.btnSumaSolicitada.Text = "Suma Solicitada";
+            this.btnSumaSolicitada.UseVisualStyleBackColor = true;
+            this.btnSumaSolicitada.Click += new System.EventHandler(this.btnSumaSolicitada_Click);
+            // 
+            // btnTasaDescuento
+            // 
+            this.btnTasaDescuento.Location = new System.Drawing.Point(414, 188);
+            this.btnTasaDescuento.Name = "btnTasaDescuento";
+            this.btnTasaDescuento.Size = new System.Drawing.Size(90, 51);
+            this.btnTasaDescuento.TabIndex = 45;
+            this.btnTasaDescuento.Text = "Tasa Descuento";
+            this.btnTasaDescuento.UseVisualStyleBackColor = true;
+            this.btnTasaDescuento.Click += new System.EventHandler(this.btnTasaDescuento_Click);
+            // 
+            // btnDescuento
+            // 
+            this.btnDescuento.Location = new System.Drawing.Point(414, 188);
+            this.btnDescuento.Name = "btnDescuento";
+            this.btnDescuento.Size = new System.Drawing.Size(90, 51);
+            this.btnDescuento.TabIndex = 43;
+            this.btnDescuento.Text = "Descuento";
+            this.btnDescuento.UseVisualStyleBackColor = true;
+            this.btnDescuento.Click += new System.EventHandler(this.btnDescuento_Click);
+            // 
+            // btnTiempo
+            // 
+            this.btnTiempo.Location = new System.Drawing.Point(414, 188);
+            this.btnTiempo.Name = "btnTiempo";
+            this.btnTiempo.Size = new System.Drawing.Size(90, 51);
+            this.btnTiempo.TabIndex = 44;
+            this.btnTiempo.Text = "Tiempo";
+            this.btnTiempo.UseVisualStyleBackColor = true;
+            this.btnTiempo.Click += new System.EventHandler(this.btnTiempo_Click);
             // 
             // txtTiempo
             // 
@@ -115,7 +201,7 @@
             1,
             0,
             0,
-            0});
+            131072});
             this.txtTiempo.Name = "txtTiempo";
             this.txtTiempo.Size = new System.Drawing.Size(187, 20);
             this.txtTiempo.TabIndex = 42;
@@ -158,7 +244,7 @@
             1,
             0,
             0,
-            0});
+            131072});
             this.txtDescuentoBancario.Name = "txtDescuentoBancario";
             this.txtDescuentoBancario.Size = new System.Drawing.Size(187, 20);
             this.txtDescuentoBancario.TabIndex = 40;
@@ -182,7 +268,7 @@
             1,
             0,
             0,
-            0});
+            131072});
             this.txtSumaSolicitada.Name = "txtSumaSolicitada";
             this.txtSumaSolicitada.Size = new System.Drawing.Size(187, 20);
             this.txtSumaSolicitada.TabIndex = 39;
@@ -207,7 +293,7 @@
             // 
             this.lblTiempo.AutoSize = true;
             this.lblTiempo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTiempo.Location = new System.Drawing.Point(31, 83);
+            this.lblTiempo.Location = new System.Drawing.Point(118, 83);
             this.lblTiempo.Name = "lblTiempo";
             this.lblTiempo.Size = new System.Drawing.Size(67, 21);
             this.lblTiempo.TabIndex = 37;
@@ -217,11 +303,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 119);
+            this.label1.Location = new System.Drawing.Point(27, 119);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 21);
+            this.label1.Size = new System.Drawing.Size(199, 21);
             this.label1.TabIndex = 36;
-            this.label1.Text = "Tasa de Descuento = d";
+            this.label1.Text = "Tasa de Descuento = d%";
             // 
             // lblcapital
             // 
@@ -243,6 +329,48 @@
             this.label2.TabIndex = 34;
             this.label2.Text = "Descuento Bancario = D";
             // 
+            // panelResultado
+            // 
+            this.panelResultado.Controls.Add(this.txtResultado);
+            this.panelResultado.Controls.Add(this.label4);
+            this.panelResultado.Location = new System.Drawing.Point(33, 242);
+            this.panelResultado.Name = "panelResultado";
+            this.panelResultado.Size = new System.Drawing.Size(471, 56);
+            this.panelResultado.TabIndex = 51;
+            this.panelResultado.Visible = false;
+            // 
+            // txtResultado
+            // 
+            this.txtResultado.BackColor = System.Drawing.SystemColors.Info;
+            this.txtResultado.DecimalPlaces = 2;
+            this.txtResultado.Enabled = false;
+            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultado.Location = new System.Drawing.Point(184, 11);
+            this.txtResultado.Maximum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            0});
+            this.txtResultado.Name = "txtResultado";
+            this.txtResultado.Size = new System.Drawing.Size(267, 35);
+            this.txtResultado.TabIndex = 51;
+            this.txtResultado.ThousandsSeparator = true;
+            this.txtResultado.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(19, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 21);
+            this.label4.TabIndex = 50;
+            this.label4.Text = "Resultado";
+            // 
             // frmDescuentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,6 +389,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTasaDescuento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescuentoBancario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSumaSolicitada)).EndInit();
+            this.panelResultado.ResumeLayout(false);
+            this.panelResultado.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtResultado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,5 +411,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblcapital;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnDescuento;
+        private System.Windows.Forms.Button btnTiempo;
+        private System.Windows.Forms.Button btnTasaDescuento;
+        private System.Windows.Forms.Button btnSumaSolicitada;
+        private System.Windows.Forms.Panel panelResultado;
+        private System.Windows.Forms.NumericUpDown txtResultado;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cbTipoTasa;
     }
 }

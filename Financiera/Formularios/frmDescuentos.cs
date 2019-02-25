@@ -12,9 +12,19 @@ namespace Financiera.Formularios
 {
     public partial class frmDescuentos : Form
     {
+        private decimal sumaSolicitada;
+        private decimal tasaDescuento;
+        private decimal tiempo;
+        private decimal descuento;
+
         public frmDescuentos()
         {
             InitializeComponent();
+        }
+
+        private bool hayCamposVacios(NumericUpDown txt)
+        {
+            return false;
         }
 
         private void CleanTexbox()
@@ -30,7 +40,7 @@ namespace Financiera.Formularios
         private void EnableText()
         {
             panelCampos.Visible = true;
-
+            panelResultado.Visible = false;
             switch (cbDescuentoSimple.SelectedItem.ToString().Trim())
             {
 
@@ -41,10 +51,10 @@ namespace Financiera.Formularios
                     // cbTipoTasa.Enabled = true;
                     txtTiempo.Enabled = true;
 
-                    /*btnDescuentoBancario.Visible = true;
-                    btnCapital.Visible = false;
-                    btnTasaInteres.Visible = false;
-                    btnTiempo.Visible = false;*/
+                    btnDescuento.Visible = true;
+                    btnSumaSolicitada.Visible = false;
+                    btnTasaDescuento.Visible = false;
+                    btnTiempo.Visible = false;
                     CleanTexbox();
                     break;
 
@@ -55,11 +65,10 @@ namespace Financiera.Formularios
                     // cbTipoTasa.Enabled = true;
                     txtTiempo.Enabled = true;
 
-                    /*txtInteres.Visible = true;
-                    btnInteres.Visible = false;
-                    btnCapital.Visible = true;
-                    btnTasaInteres.Visible = false;
-                    btnTiempo.Visible = false;*/
+                    btnDescuento.Visible = false;
+                    btnSumaSolicitada.Visible = true;
+                    btnTasaDescuento.Visible = false;
+                    btnTiempo.Visible = false;
                     CleanTexbox();
                     break;
 
@@ -70,10 +79,10 @@ namespace Financiera.Formularios
                     txtDescuentoBancario.Enabled = true;
                     txtTiempo.Enabled = true;
 
-                    /*btnInteres.Visible = false;
-                    btnCapital.Visible = false;
-                    btnTasaInteres.Visible = true;
-                    btnTiempo.Visible = false;*/
+                    btnDescuento.Visible = false;
+                    btnSumaSolicitada.Visible = false;
+                    btnTasaDescuento.Visible = true;
+                    btnTiempo.Visible = false;
                     CleanTexbox();
                     break;
 
@@ -85,10 +94,10 @@ namespace Financiera.Formularios
                     txtTasaDescuento.Enabled = true;
                     // cbTipoTasa.Enabled = true;
 
-                    /*btnInteres.Visible = false;
-                    btnCapital.Visible = false;
-                    btnTasaInteres.Visible = false;
-                    btnTiempo.Visible = true;*/
+                    btnDescuento.Visible = false;
+                    btnSumaSolicitada.Visible = false;
+                    btnTasaDescuento.Visible = false;
+                    btnTiempo.Visible = true;
                     CleanTexbox();
                     break;
             }
@@ -98,6 +107,44 @@ namespace Financiera.Formularios
         private void cbDescuentoSimple_SelectedIndexChanged(object sender, EventArgs e)
         {
             EnableText();
+        }
+
+        private void btnDescuento_Click(object sender, EventArgs e)
+        {
+            tasaDescuento = txtTasaDescuento.Value;
+            tiempo = txtTiempo.Value;
+            sumaSolicitada = txtSumaSolicitada.Value;
+            txtResultado.Value = Entidades.DescuentoSimple.CalcularDescuento(sumaSolicitada, tasaDescuento, tiempo);
+            panelResultado.Visible = true;
+        }
+
+        private void btnTasaDescuento_Click(object sender, EventArgs e)
+        {
+            descuento = txtDescuentoBancario.Value;
+            tiempo = txtTiempo.Value;
+            sumaSolicitada = txtSumaSolicitada.Value;
+            txtResultado.Value = 100 * Entidades.DescuentoSimple.CalcularTasaDescuento(descuento, sumaSolicitada, tiempo);
+            panelResultado.Visible = true;
+
+        }
+
+        private void btnSumaSolicitada_Click(object sender, EventArgs e)
+        {
+            descuento = txtDescuentoBancario.Value;
+            tiempo = txtTiempo.Value;
+            tasaDescuento = txtTasaDescuento.Value;
+            txtResultado.Value = Entidades.DescuentoSimple.CalcularSumaSolicitada(descuento, tasaDescuento, tiempo);
+            panelResultado.Visible = true;
+        }
+
+        private void btnTiempo_Click(object sender, EventArgs e)
+        {
+            descuento = txtDescuentoBancario.Value;
+            sumaSolicitada = txtSumaSolicitada.Value;
+            tasaDescuento = txtTasaDescuento.Value;
+            txtResultado.Value = Entidades.DescuentoSimple.CalcularTiempo(descuento, sumaSolicitada, tasaDescuento);
+            panelResultado.Visible = true;
+
         }
     }
 }
