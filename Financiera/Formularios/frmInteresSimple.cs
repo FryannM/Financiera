@@ -94,7 +94,7 @@ namespace Financiera.Formularios
         }
         private void EnableText(string cb)
         {
-
+            panelCampos.Visible = true;
           
             switch (cbInteresSimple.SelectedItem.ToString().Trim())
             {
@@ -103,6 +103,8 @@ namespace Financiera.Formularios
                     txtInteres.Enabled = false;
                     txtCapital.Enabled = true;
                     txtTasaInteres.Enabled = true;
+                    cbTipoTasa.Enabled = true;
+                    txtTiempo.Enabled = true;
 
                     btnInteres.Visible = true;
                     btnCapital.Visible = false;
@@ -115,9 +117,10 @@ namespace Financiera.Formularios
                     txtCapital.Enabled = false;
                     txtInteres.Enabled = true;
                     txtTasaInteres.Enabled = true;
+                    cbTipoTasa.Enabled = true;
+                    txtTiempo.Enabled = true;
 
 
-                    txtInteres.Visible = true;
                     btnInteres.Visible = false;
                     btnCapital.Visible = true;
                     btnTasaInteres.Visible = false;
@@ -127,8 +130,10 @@ namespace Financiera.Formularios
 
                 case "Tasa de Interes":
                     txtTasaInteres.Enabled = false;
+                    cbTipoTasa.Enabled = false;
                     txtCapital.Enabled = true;
                     txtInteres.Enabled = true;
+                    txtTiempo.Enabled = true;
 
                     btnInteres.Visible = false;
                     btnCapital.Visible = false;
@@ -141,6 +146,7 @@ namespace Financiera.Formularios
                 case "Tiempo":
                     txtTiempo.Enabled = false;
                     txtTasaInteres.Enabled = true;
+                    cbTipoTasa.Enabled = true;
                     txtCapital.Enabled = true;
                     txtInteres.Enabled = true;
 
