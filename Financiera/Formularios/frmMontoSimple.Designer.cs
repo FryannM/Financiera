@@ -32,14 +32,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblcapital = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbDescuento = new System.Windows.Forms.ComboBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblTiempo = new System.Windows.Forms.Label();
             this.txtTiempo = new System.Windows.Forms.TextBox();
             this.txtCapital = new System.Windows.Forms.NumericUpDown();
             this.txtMonto = new System.Windows.Forms.NumericUpDown();
             this.txtInteres = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbMontoSimple = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtCapital)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMonto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtInteres)).BeginInit();
@@ -74,28 +74,6 @@
             this.label2.Size = new System.Drawing.Size(92, 21);
             this.label2.TabIndex = 36;
             this.label2.Text = "Monto = S";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 98);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 21);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "Que Desea Calcular?";
-            // 
-            // cbDescuento
-            // 
-            this.cbDescuento.FormattingEnabled = true;
-            this.cbDescuento.Items.AddRange(new object[] {
-            "Capital",
-            "Monto",
-            "Interes"});
-            this.cbDescuento.Location = new System.Drawing.Point(192, 100);
-            this.cbDescuento.Name = "cbDescuento";
-            this.cbDescuento.Size = new System.Drawing.Size(187, 21);
-            this.cbDescuento.TabIndex = 31;
             // 
             // lblTitulo
             // 
@@ -196,11 +174,37 @@
             0,
             0});
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(19, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(173, 21);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "¿Qué Desea Calcular?";
+            // 
+            // cbMontoSimple
+            // 
+            this.cbMontoSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMontoSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMontoSimple.FormattingEnabled = true;
+            this.cbMontoSimple.Items.AddRange(new object[] {
+            "Capital",
+            "Interes",
+            "Monto"});
+            this.cbMontoSimple.Location = new System.Drawing.Point(194, 80);
+            this.cbMontoSimple.Name = "cbMontoSimple";
+            this.cbMontoSimple.Size = new System.Drawing.Size(187, 28);
+            this.cbMontoSimple.TabIndex = 45;
+            // 
             // frmMontoSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 371);
+            this.Controls.Add(this.cbMontoSimple);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtInteres);
             this.Controls.Add(this.txtMonto);
             this.Controls.Add(this.txtCapital);
@@ -209,8 +213,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblcapital);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cbDescuento);
             this.Controls.Add(this.lblTitulo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMontoSimple";
@@ -228,13 +230,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblcapital;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbDescuento;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblTiempo;
         private System.Windows.Forms.TextBox txtTiempo;
         private System.Windows.Forms.NumericUpDown txtCapital;
         private System.Windows.Forms.NumericUpDown txtMonto;
         private System.Windows.Forms.NumericUpDown txtInteres;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbMontoSimple;
     }
 }

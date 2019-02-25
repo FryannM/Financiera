@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDescuentos));
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbDescuento = new System.Windows.Forms.ComboBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblTiempo = new System.Windows.Forms.Label();
@@ -41,34 +39,13 @@
             this.txtDescuentoBancario = new System.Windows.Forms.NumericUpDown();
             this.txtTasaDescuento = new System.Windows.Forms.NumericUpDown();
             this.txtTiempo = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbDescuentoSimple = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtSumaSolicitada)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescuentoBancario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTasaDescuento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTiempo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(41, 113);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 21);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Que Desea Calcular?";
-            // 
-            // cbDescuento
-            // 
-            this.cbDescuento.FormattingEnabled = true;
-            this.cbDescuento.Items.AddRange(new object[] {
-            "Descuento Bancario",
-            "Suma Solicitada",
-            "Tasa Descuento",
-            "Tiempo"});
-            this.cbDescuento.Location = new System.Drawing.Point(251, 115);
-            this.cbDescuento.Name = "cbDescuento";
-            this.cbDescuento.Size = new System.Drawing.Size(187, 21);
-            this.cbDescuento.TabIndex = 10;
             // 
             // lblTitulo
             // 
@@ -221,11 +198,38 @@
             0,
             0});
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(70, 102);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(173, 21);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "¿Qué Desea Calcular?";
+            // 
+            // cbDescuentoSimple
+            // 
+            this.cbDescuentoSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDescuentoSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDescuentoSimple.FormattingEnabled = true;
+            this.cbDescuentoSimple.Items.AddRange(new object[] {
+            "Descuento Bancario",
+            "Suma Solicitada",
+            "Tasa de Descuento",
+            "Tiempo"});
+            this.cbDescuentoSimple.Location = new System.Drawing.Point(252, 100);
+            this.cbDescuentoSimple.Name = "cbDescuentoSimple";
+            this.cbDescuentoSimple.Size = new System.Drawing.Size(187, 28);
+            this.cbDescuentoSimple.TabIndex = 35;
+            // 
             // frmDescuentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(541, 450);
+            this.Controls.Add(this.cbDescuentoSimple);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtTiempo);
             this.Controls.Add(this.txtTasaDescuento);
             this.Controls.Add(this.txtDescuentoBancario);
@@ -235,8 +239,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblcapital);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cbDescuento);
             this.Controls.Add(this.lblTitulo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDescuentos";
@@ -251,9 +253,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbDescuento;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblTiempo;
@@ -264,5 +263,7 @@
         private System.Windows.Forms.NumericUpDown txtDescuentoBancario;
         private System.Windows.Forms.NumericUpDown txtTasaDescuento;
         private System.Windows.Forms.NumericUpDown txtTiempo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbDescuentoSimple;
     }
 }

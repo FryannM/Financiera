@@ -97,15 +97,17 @@
             // 
             // cbInteresSimple
             // 
+            this.cbInteresSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbInteresSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbInteresSimple.FormattingEnabled = true;
             this.cbInteresSimple.Items.AddRange(new object[] {
             "Interes Simple",
             "Capital",
             "Tasa de Interes",
             "Tiempo"});
-            this.cbInteresSimple.Location = new System.Drawing.Point(244, 82);
+            this.cbInteresSimple.Location = new System.Drawing.Point(244, 57);
             this.cbInteresSimple.Name = "cbInteresSimple";
-            this.cbInteresSimple.Size = new System.Drawing.Size(187, 21);
+            this.cbInteresSimple.Size = new System.Drawing.Size(187, 28);
             this.cbInteresSimple.TabIndex = 7;
             this.cbInteresSimple.SelectedIndexChanged += new System.EventHandler(this.cbInteresSimple_SelectedIndexChanged);
             // 
@@ -113,11 +115,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(46, 81);
+            this.label3.Location = new System.Drawing.Point(46, 62);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 21);
+            this.label3.Size = new System.Drawing.Size(173, 21);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Que Desea Calcular?";
+            this.label3.Text = "¿Qué Desea Calcular?";
             // 
             // label4
             // 
