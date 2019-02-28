@@ -14,7 +14,9 @@ namespace Financiera.Formularios
                 cbPeriodos.Items.Add(periodo);
             }
 
-            cbPeriodos.SelectedIndex = cbPeriodos.Items.IndexOf(InteresCompuesto.Frecuencia.Anual);
+            cbPeriodos.SelectedIndex = cbPeriodos.Items.IndexOf(Enum.GetName(
+                typeof(InteresCompuesto.Frecuencia), InteresCompuesto.Frecuencia.Anual
+                ));
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
@@ -22,7 +24,7 @@ namespace Financiera.Formularios
             decimal tasaNominal = txtTasaNominal.Value;
             var periodo = (InteresCompuesto.Frecuencia)Enum.Parse(typeof(InteresCompuesto.Frecuencia), cbPeriodos.SelectedItem.ToString());
             txtResultado.Value = InteresCompuesto.CalcularTasaEfectiva(periodo, tasaNominal);
-            labelPeriodo.Text = periodo.ToString();
+            labelPeriodo.Text = "% " + periodo.ToString();
             panelResultado.Visible = true;
         }
     }
