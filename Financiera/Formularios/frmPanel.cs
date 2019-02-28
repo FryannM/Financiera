@@ -47,5 +47,11 @@ namespace Financiera
             Formularios.frmMontoSimple montosimple = new Formularios.frmMontoSimple();
             montosimple.Show();
         }
+
+        private void btnInteresCompuesto_Click(object sender, EventArgs e)
+        {
+            Formularios.frmInteresCompuesto interesCompuesto = new Formularios.frmInteresCompuesto();
+            interesCompuesto.Show();
+        }
     }
 }

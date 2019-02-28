@@ -34,6 +34,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMontoSimple = new System.Windows.Forms.Button();
+            this.btnInteresCompuesto = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnInteresSimple
@@ -86,11 +87,22 @@
             this.btnMontoSimple.UseVisualStyleBackColor = true;
             this.btnMontoSimple.Click += new System.EventHandler(this.btnMontoSimple_Click);
             // 
+            // btnInteresCompuesto
+            // 
+            this.btnInteresCompuesto.Location = new System.Drawing.Point(388, 260);
+            this.btnInteresCompuesto.Name = "btnInteresCompuesto";
+            this.btnInteresCompuesto.Size = new System.Drawing.Size(195, 80);
+            this.btnInteresCompuesto.TabIndex = 6;
+            this.btnInteresCompuesto.Text = "Interes Compuesto";
+            this.btnInteresCompuesto.UseVisualStyleBackColor = true;
+            this.btnInteresCompuesto.Click += new System.EventHandler(this.btnInteresCompuesto_Click);
+            // 
             // frmPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 567);
+            this.Controls.Add(this.btnInteresCompuesto);
             this.Controls.Add(this.btnMontoSimple);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
@@ -114,6 +126,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMontoSimple;
+        private System.Windows.Forms.Button btnInteresCompuesto;
     }
 }
 
