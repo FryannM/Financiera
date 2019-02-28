@@ -38,7 +38,7 @@ namespace Financiera.Entidades
 
         /// <returns>Tasa efectiva expresada en porcentaje.</returns>
         public static decimal CalcularTasaEfectiva(Frecuencia periodo, decimal tasaNominal)
-            => Convert.ToDecimal(periodo) * tasaNominal;
+            => tasaNominal / Convert.ToDecimal(periodo);
 
         public static decimal CalcularInteres(decimal monto, decimal capital) 
             => monto - capital;
