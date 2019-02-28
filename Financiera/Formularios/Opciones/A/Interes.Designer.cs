@@ -64,6 +64,11 @@
             -1,
             -1,
             0});
+            this.txtResultado.Minimum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            -2147483648});
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(267, 35);
             this.txtResultado.TabIndex = 51;
