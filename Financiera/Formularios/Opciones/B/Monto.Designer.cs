@@ -83,9 +83,9 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(4, 6);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(174, 40);
+            this.label4.Size = new System.Drawing.Size(166, 40);
             this.label4.TabIndex = 50;
-            this.label4.Text = "Capital = $";
+            this.label4.Text = "Monto = $";
             // 
             // txtTotalPeriodos
             // 

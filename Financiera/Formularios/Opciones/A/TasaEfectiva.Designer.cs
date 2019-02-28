@@ -50,7 +50,7 @@
             this.panelResultado.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelResultado.Location = new System.Drawing.Point(0, 109);
             this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(561, 56);
+            this.panelResultado.Size = new System.Drawing.Size(605, 56);
             this.panelResultado.TabIndex = 94;
             this.panelResultado.Visible = false;
             // 
@@ -60,7 +60,7 @@
             this.txtResultado.DecimalPlaces = 2;
             this.txtResultado.Enabled = false;
             this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultado.Location = new System.Drawing.Point(227, 8);
+            this.txtResultado.Location = new System.Drawing.Point(255, 9);
             this.txtResultado.Maximum = new decimal(new int[] {
             -1,
             -1,
@@ -84,18 +84,18 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(0, 6);
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(7, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(227, 40);
+            this.label4.Size = new System.Drawing.Size(227, 36);
             this.label4.TabIndex = 50;
-            this.label4.Text = "Tasa efectiva =";
+            this.label4.Text = "Tasa Efectiva = i";
             // 
             // labelPeriodo
             // 
             this.labelPeriodo.AutoSize = true;
             this.labelPeriodo.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPeriodo.Location = new System.Drawing.Point(319, 6);
+            this.labelPeriodo.Location = new System.Drawing.Point(357, 6);
             this.labelPeriodo.Name = "labelPeriodo";
             this.labelPeriodo.Size = new System.Drawing.Size(246, 40);
             this.labelPeriodo.TabIndex = 52;
@@ -170,7 +170,7 @@
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcular);
             this.Name = "TasaEfectiva_A";
-            this.Size = new System.Drawing.Size(561, 165);
+            this.Size = new System.Drawing.Size(605, 165);
             this.panelResultado.ResumeLayout(false);
             this.panelResultado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtResultado)).EndInit();

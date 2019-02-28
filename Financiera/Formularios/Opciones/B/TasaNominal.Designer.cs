@@ -93,11 +93,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(-3, 6);
+            this.label4.Location = new System.Drawing.Point(15, 6);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(251, 40);
+            this.label4.Size = new System.Drawing.Size(250, 40);
             this.label4.TabIndex = 50;
-            this.label4.Text = "Tasa Efectiva = i";
+            this.label4.Text = "Tasa Nominal = ";
             // 
             // label1
             // 

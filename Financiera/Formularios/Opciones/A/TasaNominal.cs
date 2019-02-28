@@ -14,7 +14,9 @@ namespace Financiera.Formularios
                 cbPeriodos.Items.Add(periodo);
             }
 
-            cbPeriodos.SelectedIndex = cbPeriodos.Items.IndexOf(InteresCompuesto.Frecuencia.Anual);
+            cbPeriodos.SelectedIndex = cbPeriodos.Items.IndexOf(Enum.GetName(
+                typeof(InteresCompuesto.Frecuencia), InteresCompuesto.Frecuencia.Anual
+                ));
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
