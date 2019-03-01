@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelResultado = new System.Windows.Forms.Panel();
-            this.txtResultado = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtTotalPeriodos = new System.Windows.Forms.NumericUpDown();
             this.lblTiempo = new System.Windows.Forms.Label();
             this.txtMonto = new System.Windows.Forms.NumericUpDown();
@@ -39,71 +35,16 @@
             this.txtCapital = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.panelResultado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtResultado)).BeginInit();
+            this.panelResultado = new System.Windows.Forms.FlowLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtResultado = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtTotalPeriodos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMonto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCapital)).BeginInit();
+            this.panelResultado.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtResultado)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panelResultado
-            // 
-            this.panelResultado.Controls.Add(this.txtResultado);
-            this.panelResultado.Controls.Add(this.label4);
-            this.panelResultado.Controls.Add(this.label1);
-            this.panelResultado.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelResultado.Location = new System.Drawing.Point(0, 174);
-            this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(531, 56);
-            this.panelResultado.TabIndex = 109;
-            this.panelResultado.Visible = false;
-            // 
-            // txtResultado
-            // 
-            this.txtResultado.BackColor = System.Drawing.SystemColors.Info;
-            this.txtResultado.DecimalPlaces = 2;
-            this.txtResultado.Enabled = false;
-            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultado.Location = new System.Drawing.Point(254, 9);
-            this.txtResultado.Maximum = new decimal(new int[] {
-            -1,
-            -1,
-            -1,
-            0});
-            this.txtResultado.Minimum = new decimal(new int[] {
-            -1,
-            -1,
-            -1,
-            -2147483648});
-            this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(227, 35);
-            this.txtResultado.TabIndex = 51;
-            this.txtResultado.ThousandsSeparator = true;
-            this.txtResultado.Value = new decimal(new int[] {
-            -1,
-            -1,
-            -1,
-            0});
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(0, 6);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(251, 40);
-            this.label4.TabIndex = 50;
-            this.label4.Text = "Tasa Efectiva = i";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(487, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 40);
-            this.label1.TabIndex = 53;
-            this.label1.Text = "%";
             // 
             // txtTotalPeriodos
             // 
@@ -209,13 +150,72 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(425, 123);
+            this.btnCalcular.Location = new System.Drawing.Point(425, 114);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(90, 51);
             this.btnCalcular.TabIndex = 108;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // panelResultado
+            // 
+            this.panelResultado.AutoSize = true;
+            this.panelResultado.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelResultado.Controls.Add(this.label4);
+            this.panelResultado.Controls.Add(this.txtResultado);
+            this.panelResultado.Controls.Add(this.label1);
+            this.panelResultado.Location = new System.Drawing.Point(0, 174);
+            this.panelResultado.Name = "panelResultado";
+            this.panelResultado.Size = new System.Drawing.Size(542, 41);
+            this.panelResultado.TabIndex = 116;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(251, 40);
+            this.label4.TabIndex = 54;
+            this.label4.Text = "Tasa Efectiva = i";
+            // 
+            // txtResultado
+            // 
+            this.txtResultado.BackColor = System.Drawing.SystemColors.Info;
+            this.txtResultado.DecimalPlaces = 2;
+            this.txtResultado.Enabled = false;
+            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultado.Location = new System.Drawing.Point(260, 3);
+            this.txtResultado.Maximum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            0});
+            this.txtResultado.Minimum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            -2147483648});
+            this.txtResultado.Name = "txtResultado";
+            this.txtResultado.Size = new System.Drawing.Size(227, 35);
+            this.txtResultado.TabIndex = 55;
+            this.txtResultado.ThousandsSeparator = true;
+            this.txtResultado.Value = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            0});
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(493, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 40);
+            this.label1.TabIndex = 56;
+            this.label1.Text = "%";
             // 
             // TasaEfectiva_B
             // 
@@ -230,24 +230,19 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCalcular);
             this.Name = "TasaEfectiva_B";
-            this.Size = new System.Drawing.Size(531, 230);
-            this.panelResultado.ResumeLayout(false);
-            this.panelResultado.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtResultado)).EndInit();
+            this.Size = new System.Drawing.Size(547, 215);
             ((System.ComponentModel.ISupportInitialize)(this.txtTotalPeriodos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMonto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCapital)).EndInit();
+            this.panelResultado.ResumeLayout(false);
+            this.panelResultado.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtResultado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panelResultado;
-        private System.Windows.Forms.NumericUpDown txtResultado;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown txtTotalPeriodos;
         private System.Windows.Forms.Label lblTiempo;
         private System.Windows.Forms.NumericUpDown txtMonto;
@@ -255,5 +250,9 @@
         private System.Windows.Forms.NumericUpDown txtCapital;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.FlowLayoutPanel panelResultado;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown txtResultado;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -24,7 +24,6 @@ namespace Financiera.Formularios
             decimal tasaNominal = txtTasaNominal.Value;
             var periodo = (InteresCompuesto.Frecuencia)Enum.Parse(typeof(InteresCompuesto.Frecuencia), cbPeriodos.SelectedItem.ToString());
             txtResultado.Value = InteresCompuesto.CalcularTasaEfectiva(periodo, tasaNominal);
-            labelPeriodo.Text = "% " + periodo.ToString();
             panelResultado.Visible = true;
         }
     }
