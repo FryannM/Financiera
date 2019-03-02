@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Financiera.Entidades.Compuesto;
+using System;
 using System.Windows.Forms;
-using Financiera.Entidades;
 
 namespace Financiera.Formularios
 {
@@ -22,7 +15,7 @@ namespace Financiera.Formularios
         {
             decimal monto = txtMonto.Value;
             decimal capital = txtCapital.Value;
-            txtResultado.Value = InteresCompuesto.CalcularInteres(monto, capital);
+            txtResultado.Value = Interes.CalcularInteres(monto, capital);
             panelResultado.Visible = true;
 
         }

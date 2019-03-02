@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDescuentos));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbDescuentoSimple = new System.Windows.Forms.ComboBox();
+            this.cbDescuentoBancario = new System.Windows.Forms.ComboBox();
             this.panelCampos = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.cbTipoTasa = new System.Windows.Forms.ComboBox();
@@ -80,21 +80,21 @@
             this.label3.TabIndex = 34;
             this.label3.Text = "¿Qué Desea Calcular?";
             // 
-            // cbDescuentoSimple
+            // cbDescuentoBancario
             // 
-            this.cbDescuentoSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDescuentoSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbDescuentoSimple.FormattingEnabled = true;
-            this.cbDescuentoSimple.Items.AddRange(new object[] {
+            this.cbDescuentoBancario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDescuentoBancario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDescuentoBancario.FormattingEnabled = true;
+            this.cbDescuentoBancario.Items.AddRange(new object[] {
             "Descuento Bancario",
             "Suma Solicitada",
             "Tasa de Descuento",
             "Tiempo"});
-            this.cbDescuentoSimple.Location = new System.Drawing.Point(252, 100);
-            this.cbDescuentoSimple.Name = "cbDescuentoSimple";
-            this.cbDescuentoSimple.Size = new System.Drawing.Size(187, 28);
-            this.cbDescuentoSimple.TabIndex = 35;
-            this.cbDescuentoSimple.SelectedIndexChanged += new System.EventHandler(this.cbDescuentoSimple_SelectedIndexChanged);
+            this.cbDescuentoBancario.Location = new System.Drawing.Point(252, 100);
+            this.cbDescuentoBancario.Name = "cbDescuentoBancario";
+            this.cbDescuentoBancario.Size = new System.Drawing.Size(187, 28);
+            this.cbDescuentoBancario.TabIndex = 35;
+            this.cbDescuentoBancario.SelectedIndexChanged += new System.EventHandler(this.cbDescuentoSimple_SelectedIndexChanged);
             // 
             // panelCampos
             // 
@@ -146,7 +146,6 @@
             this.cbTipoTasa.Name = "cbTipoTasa";
             this.cbTipoTasa.Size = new System.Drawing.Size(187, 21);
             this.cbTipoTasa.TabIndex = 52;
-            this.cbTipoTasa.SelectedIndex = cbTipoTasa.Items.IndexOf("Mensual");
             // 
             // btnSumaSolicitada
             // 
@@ -376,7 +375,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(541, 450);
-            this.Controls.Add(this.cbDescuentoSimple);
+            this.Controls.Add(this.cbDescuentoBancario);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.panelCampos);
@@ -400,7 +399,7 @@
         #endregion
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbDescuentoSimple;
+        private System.Windows.Forms.ComboBox cbDescuentoBancario;
         private System.Windows.Forms.Panel panelCampos;
         private System.Windows.Forms.NumericUpDown txtTiempo;
         private System.Windows.Forms.NumericUpDown txtTasaDescuento;

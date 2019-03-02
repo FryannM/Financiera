@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Financiera.Entidades.Compuesto;
+using System;
 using System.Windows.Forms;
-using Financiera.Entidades;
 
 namespace Financiera.Formularios
 {
@@ -23,7 +16,7 @@ namespace Financiera.Formularios
             decimal capital = txtCapital.Value;
             decimal tasaEfectiva = txtTasaEfectiva.Value;
             decimal totalPeriodos = txtTotalPeriodos.Value;
-            txtResultado.Value = InteresCompuesto.CalcularInteres(capital, tasaEfectiva, totalPeriodos);
+            txtResultado.Value = Interes.CalcularInteres(capital, tasaEfectiva, totalPeriodos);
             panelResultado.Visible = true;
         }
     }

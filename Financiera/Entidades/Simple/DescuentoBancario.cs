@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Financiera.Entidades
+﻿namespace Financiera.Entidades.Simple
 {
     /// <summary>
     /// Construyo esta clase estática para almacenar los métodos estáticos que utilizaré para hacer cálculos en el formulario
     /// descuentos.
     /// </summary>
-    public static class DescuentoSimple
+    public static class DescuentoBancario
     {
         public static decimal CalcularDescuento(decimal sumaSolicitada, decimal tasaDescuento, decimal tiempo)
         {

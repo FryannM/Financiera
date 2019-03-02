@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using Financiera.Entidades;
+using Financiera.Entidades.Compuesto;
 
 namespace Financiera.Formularios
 {
@@ -9,21 +9,21 @@ namespace Financiera.Formularios
         public TasaNominal_A()
         {
             InitializeComponent();
-            foreach (var periodo in Enum.GetNames(typeof(InteresCompuesto.Frecuencia)))
+            foreach (var periodo in Enum.GetNames(typeof(Interes.Frecuencia)))
             {
                 cbPeriodos.Items.Add(periodo);
             }
 
             cbPeriodos.SelectedIndex = cbPeriodos.Items.IndexOf(Enum.GetName(
-                typeof(InteresCompuesto.Frecuencia), InteresCompuesto.Frecuencia.Anual
+                typeof(Interes.Frecuencia), Interes.Frecuencia.Anual
                 ));
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             decimal tasaEfectiva = txtTasaEfectiva.Value;
-            var periodo = (InteresCompuesto.Frecuencia)Enum.Parse(typeof(InteresCompuesto.Frecuencia), cbPeriodos.SelectedItem.ToString());
-            txtResultado.Value = InteresCompuesto.CalcularTasaNominal(periodo, tasaEfectiva);
+            var periodo = (Interes.Frecuencia)Enum.Parse(typeof(Interes.Frecuencia), cbPeriodos.SelectedItem.ToString());
+            txtResultado.Value = Interes.CalcularTasaNominal(periodo, tasaEfectiva);
             panelResultado.Visible = true;
         }
     }

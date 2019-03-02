@@ -86,9 +86,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entidades\DescuentoSimple.cs" />
-    <Compile Include="Entidades\InteresCompuesto.cs" />
-    <Compile Include="Entidades\InteresSimple.cs" />
+    <Compile Include="Entidades\Simple\DescuentoBancario.cs" />
+    <Compile Include="Entidades\Compuesto\Interes.cs" />
+    <Compile Include="Entidades\Simple\Interes.cs" />
     <Compile Include="Formularios\Opciones\A\Interes.cs">
       <SubType>UserControl</SubType>
     </Compile>

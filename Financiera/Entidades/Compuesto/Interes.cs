@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Financiera.Entidades
+namespace Financiera.Entidades.Compuesto
 {
     /// <summary>
     /// Provee métodos estáticos para hacer cálculos de interés compuesto en el formulario.
     /// </summary>
 
-    public static class InteresCompuesto
+    public static class Interes
     {
         public enum Frecuencia : ushort
         {

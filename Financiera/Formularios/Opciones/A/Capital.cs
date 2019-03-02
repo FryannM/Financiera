@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using Financiera.Entidades;
+using Financiera.Entidades.Compuesto;
 
 namespace Financiera.Formularios
 {
@@ -15,7 +15,7 @@ namespace Financiera.Formularios
         {
             decimal monto = txtMonto.Value;
             decimal interes = txtInteres.Value;
-            txtResultado.Value = InteresCompuesto.CalcularCapital(monto, interes);
+            txtResultado.Value = Interes.CalcularCapital(monto, interes);
             panelResultado.Visible = true;
 
         }

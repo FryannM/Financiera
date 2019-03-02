@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
-using Financiera.Entidades;
+using Financiera.Entidades.Compuesto;
 
 namespace Financiera.Formularios
 {
@@ -16,7 +15,7 @@ namespace Financiera.Formularios
         {
             decimal tiempo = txtTiempo.Value;
             decimal periodo = txtPeriodo.Value;
-            txtResultado.Value = InteresCompuesto.CalcularTotalPeriodos(periodo, tiempo);
+            txtResultado.Value = Interes.CalcularTotalPeriodos(periodo, tiempo);
             panelResultado.Visible = true;
         }
     }
