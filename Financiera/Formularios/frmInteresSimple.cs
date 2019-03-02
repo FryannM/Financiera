@@ -1,7 +1,7 @@
 ﻿using Financiera.Services;
 using System;
 using System.Windows.Forms;
-
+using Financiera.Entidades.Simple;
 
 namespace Financiera.Formularios
 {
@@ -13,7 +13,7 @@ namespace Financiera.Formularios
         public double tiempo;
         public  double interes;
 
-        private Entidades.InteresSimple entidad { get; set; } = new Entidades.InteresSimple();
+        private Interes entidad { get; set; } = new Interes();
 
 
         public frmInteresSimple()
@@ -209,7 +209,7 @@ namespace Financiera.Formularios
 
         private void btnCapital_Click(object sender, EventArgs e)
         {
-            interes = entidad.Interes = Convert.ToDouble(txtInteres.Text);
+            interes = entidad.Interes_ = Convert.ToDouble(txtInteres.Text);
             tasaInteres = entidad.TasaInteres = Convert.ToDouble(txtTasaInteres.Text);
             tiempo = entidad.Tiempo = Convert.ToDouble(txtTiempo.Text);
             result = CalcularServices.CalcularCapital(interes, tasaInteres, tiempo);
@@ -221,7 +221,7 @@ namespace Financiera.Formularios
 
         private void btnTasaInteres_Click(object sender, EventArgs e)
         {
-            interes = entidad.Interes = Convert.ToDouble(txtInteres.Text);
+            interes = entidad.Interes_ = Convert.ToDouble(txtInteres.Text);
             tiempo = entidad.Tiempo = Convert.ToDouble(txtTiempo.Text);
             capital = entidad.Capital = Convert.ToDouble(txtCapital.Text);
             result = CalcularServices.CalcularTasaInteres(interes, capital, tiempo);
@@ -233,7 +233,7 @@ namespace Financiera.Formularios
 
         private void btnTiempo_Click(object sender, EventArgs e)
         {
-            interes = entidad.Interes = Convert.ToDouble(txtInteres.Text);
+            interes = entidad.Interes_ = Convert.ToDouble(txtInteres.Text);
             tasaInteres = entidad.TasaInteres = Convert.ToDouble(txtTasaInteres.Text);
             capital = entidad.Capital = Convert.ToDouble(txtCapital.Text);
             result = CalcularServices.CalcularTiempo(interes, capital, tasaInteres );

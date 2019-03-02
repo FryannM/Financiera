@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Financiera.Entidades.Simple;
 
 namespace Financiera.Formularios
 {
@@ -41,7 +35,7 @@ namespace Financiera.Formularios
         {
             panelCampos.Visible = true;
             panelResultado.Visible = false;
-            switch (cbDescuentoSimple.SelectedItem.ToString().Trim())
+            switch (cbDescuentoBancario.SelectedItem.ToString().Trim())
             {
 
                 case "Descuento Bancario":
@@ -114,7 +108,7 @@ namespace Financiera.Formularios
             tasaDescuento = txtTasaDescuento.Value;
             tiempo = txtTiempo.Value;
             sumaSolicitada = txtSumaSolicitada.Value;
-            txtResultado.Value = Entidades.DescuentoSimple.CalcularDescuento(sumaSolicitada, tasaDescuento, tiempo);
+            txtResultado.Value = DescuentoBancario.CalcularDescuento(sumaSolicitada, tasaDescuento, tiempo);
             panelResultado.Visible = true;
         }
 
@@ -123,7 +117,7 @@ namespace Financiera.Formularios
             descuento = txtDescuentoBancario.Value;
             tiempo = txtTiempo.Value;
             sumaSolicitada = txtSumaSolicitada.Value;
-            txtResultado.Value = 100 * Entidades.DescuentoSimple.CalcularTasaDescuento(descuento, sumaSolicitada, tiempo);
+            txtResultado.Value = 100 * DescuentoBancario.CalcularTasaDescuento(descuento, sumaSolicitada, tiempo);
             panelResultado.Visible = true;
 
         }
@@ -133,7 +127,7 @@ namespace Financiera.Formularios
             descuento = txtDescuentoBancario.Value;
             tiempo = txtTiempo.Value;
             tasaDescuento = txtTasaDescuento.Value;
-            txtResultado.Value = Entidades.DescuentoSimple.CalcularSumaSolicitada(descuento, tasaDescuento, tiempo);
+            txtResultado.Value = DescuentoBancario.CalcularSumaSolicitada(descuento, tasaDescuento, tiempo);
             panelResultado.Visible = true;
         }
 
@@ -142,7 +136,7 @@ namespace Financiera.Formularios
             descuento = txtDescuentoBancario.Value;
             sumaSolicitada = txtSumaSolicitada.Value;
             tasaDescuento = txtTasaDescuento.Value;
-            txtResultado.Value = Entidades.DescuentoSimple.CalcularTiempo(descuento, sumaSolicitada, tasaDescuento);
+            txtResultado.Value = DescuentoBancario.CalcularTiempo(descuento, sumaSolicitada, tasaDescuento);
             panelResultado.Visible = true;
 
         }

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using Financiera.Entidades;
+using Financiera.Entidades.Compuesto;
 
 namespace Financiera.Formularios
 {
@@ -15,7 +15,7 @@ namespace Financiera.Formularios
         {
             decimal totalPeriodos = txtTotalPeriodos.Value;
             decimal frecuencia = txtPeriodo.Value;
-            txtResultado.Value = InteresCompuesto.CalcularTiempo(frecuencia, totalPeriodos);
+            txtResultado.Value = Interes.CalcularTiempo(frecuencia, totalPeriodos);
             panelResultado.Visible = true;
         }
     }
