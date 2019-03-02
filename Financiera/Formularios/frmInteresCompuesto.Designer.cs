@@ -75,7 +75,7 @@
             "Tiempo"});
             this.cbInteresCompuesto.Location = new System.Drawing.Point(252, 100);
             this.cbInteresCompuesto.Name = "cbInteresCompuesto";
-            this.cbInteresCompuesto.Size = new System.Drawing.Size(231, 28);
+            this.cbInteresCompuesto.Size = new System.Drawing.Size(244, 28);
             this.cbInteresCompuesto.TabIndex = 1;
             this.cbInteresCompuesto.SelectedIndexChanged += new System.EventHandler(this.cbInteresCompuesto_SelectedIndexChanged);
             // 
