@@ -3,9 +3,9 @@ using System;
 using System.Windows.Forms;
 using Financiera.Entidades.Simple;
 
-namespace Financiera.Formularios
+namespace Financiera.Formularios.Simple.frmInteres
 {
-    public partial class frmInteresSimple : Form
+    public partial class Form : System.Windows.Forms.Form
     {
         public double result = 0;
         public  double capital;
@@ -16,7 +16,7 @@ namespace Financiera.Formularios
         private Interes entidad { get; set; } = new Interes();
 
 
-        public frmInteresSimple()
+        public Form()
         {
 
             InitializeComponent();

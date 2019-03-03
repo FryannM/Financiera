@@ -1,6 +1,6 @@
-﻿namespace Financiera.Formularios
+﻿namespace Financiera.Formularios.Simple.frmInteres
 {
-    partial class frmInteresSimple
+    partial class Form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInteresSimple));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.cbInteresSimple = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();

@@ -1,6 +1,6 @@
-﻿namespace Financiera.Formularios
+﻿namespace Financiera.Formularios.Simple.frmDescuentoBancario
 {
-    partial class frmDescuentos
+    partial class Form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDescuentos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbDescuentoBancario = new System.Windows.Forms.ComboBox();
