@@ -30,14 +30,14 @@ namespace Financiera.Entidades.Compuesto
 
         /// <returns>Tasa nominal expresada en porcentaje.</returns>
         public static decimal CalcularTasaNominal(Frecuencia periodo, decimal monto, decimal capital, decimal totalPeriodos)
-            => Convert.ToDecimal(periodo) * CalcularTasaEfectiva(monto, capital, totalPeriodos);
+            => Convert.ToDecimal(periodo) * CalcularTasaXPeriodo(monto, capital, totalPeriodos);
 
         /// <returns>Tasa efectiva expresada en porcentaje.</returns>
-        public static decimal CalcularTasaEfectiva(decimal monto, decimal capital, decimal totalPeriodos) 
+        public static decimal CalcularTasaXPeriodo(decimal monto, decimal capital, decimal totalPeriodos) 
             => Convert.ToDecimal(Math.Pow(Convert.ToDouble(monto / capital), Convert.ToDouble(1 / totalPeriodos)) - 1) * 100;
 
         /// <returns>Tasa efectiva expresada en porcentaje.</returns>
-        public static decimal CalcularTasaEfectiva(Frecuencia periodo, decimal tasaNominal)
+        public static decimal CalcularTasaXPeriodo(Frecuencia periodo, decimal tasaNominal)
             => tasaNominal / Convert.ToDecimal(periodo);
 
         public static decimal CalcularInteres(decimal monto, decimal capital) 

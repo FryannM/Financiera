@@ -89,71 +89,71 @@
     <Compile Include="Entidades\Simple\DescuentoBancario.cs" />
     <Compile Include="Entidades\Compuesto\Interes.cs" />
     <Compile Include="Entidades\Simple\Interes.cs" />
-    <Compile Include="Formularios\Opciones\A\Interes.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\Interes.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\A\Interes.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\Interes.Designer.cs">
       <DependentUpon>Interes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Opciones\B\Interes.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\B\Interes.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\B\Interes.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\B\Interes.Designer.cs">
       <DependentUpon>Interes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Opciones\A\Monto.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\Monto.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\A\Monto.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\Monto.Designer.cs">
       <DependentUpon>Monto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Opciones\B\Monto.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\B\Monto.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\B\Monto.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\B\Monto.Designer.cs">
       <DependentUpon>Monto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Opciones\A\Capital.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\Capital.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\A\Capital.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\Capital.Designer.cs">
       <DependentUpon>Capital.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Opciones\Capital_C.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\C\Capital_C.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\Capital_C.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\C\Capital_C.Designer.cs">
       <DependentUpon>Capital_C.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Opciones\B\Capital.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\B\Capital.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\B\Capital.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\B\Capital.Designer.cs">
       <DependentUpon>Capital.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmInteresCompuesto.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\frmInteresCompuesto.Designer.cs">
-      <DependentUpon>frmInteresCompuesto.cs</DependentUpon>
+    <Compile Include="Formularios\Compuesto\frmInteres\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmDescuentos.cs">
+    <Compile Include="Formularios\Simple\frmDescuentoBancario\Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\frmDescuentos.Designer.cs">
-      <DependentUpon>frmDescuentos.cs</DependentUpon>
+    <Compile Include="Formularios\Simple\frmDescuentoBancario\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmInteresSimple.cs">
+    <Compile Include="Formularios\Simple\frmInteres\Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\frmInteresSimple.Designer.cs">
-      <DependentUpon>frmInteresSimple.cs</DependentUpon>
+    <Compile Include="Formularios\Simple\frmInteres\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmMontoSimple.cs">
+    <Compile Include="Formularios\Simple\frmMontoSimple\Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\frmMontoSimple.Designer.cs">
-      <DependentUpon>frmMontoSimple.cs</DependentUpon>
+    <Compile Include="Formularios\Simple\frmMontoSimple\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmPanel.cs">
       <SubType>Form</SubType>
@@ -161,46 +161,46 @@
     <Compile Include="Formularios\frmPanel.Designer.cs">
       <DependentUpon>frmPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Opciones\A\TasaEfectiva.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\TasaEfectiva.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\A\TasaEfectiva.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\TasaEfectiva.Designer.cs">
       <DependentUpon>TasaEfectiva.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Opciones\A\TasaNominal.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\TasaNominal.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\A\TasaNominal.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\TasaNominal.Designer.cs">
       <DependentUpon>TasaNominal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Opciones\B\TasaEfectiva.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\B\TasaEfectiva.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\B\TasaEfectiva.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\B\TasaEfectiva.Designer.cs">
       <DependentUpon>TasaEfectiva.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Opciones\B\TasaNominal.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\B\TasaNominal.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\B\TasaNominal.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\B\TasaNominal.Designer.cs">
       <DependentUpon>TasaNominal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Opciones\A\TotalPeriodos.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\TotalPeriodos.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\A\TotalPeriodos.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\TotalPeriodos.Designer.cs">
       <DependentUpon>TotalPeriodos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Opciones\B\TotalPeriodos.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\B\TotalPeriodos.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\B\TotalPeriodos.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\B\TotalPeriodos.Designer.cs">
       <DependentUpon>TotalPeriodos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Opciones\A\Tiempo.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\Tiempo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\Opciones\A\Tiempo.Designer.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\A\Tiempo.Designer.cs">
       <DependentUpon>Tiempo.cs</DependentUpon>
     </Compile>
     <Compile Include="Interface\IInteresSimple.cs" />
@@ -209,61 +209,61 @@
     <Compile Include="Services\CalcularServices.cs" />
     <Compile Include="util\Tasa.cs" />
     <Compile Include="util\util.cs" />
-    <EmbeddedResource Include="Formularios\Opciones\A\Interes.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\A\Interes.resx">
       <DependentUpon>Interes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Opciones\B\Interes.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\B\Interes.resx">
       <DependentUpon>Interes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Opciones\A\Monto.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\A\Monto.resx">
       <DependentUpon>Monto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Opciones\B\Monto.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\B\Monto.resx">
       <DependentUpon>Monto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Opciones\A\Capital.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\A\Capital.resx">
       <DependentUpon>Capital.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Opciones\Capital_C.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\C\Capital_C.resx">
       <DependentUpon>Capital_C.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Opciones\B\Capital.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\B\Capital.resx">
       <DependentUpon>Capital.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmInteresCompuesto.resx">
-      <DependentUpon>frmInteresCompuesto.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmDescuentos.resx">
-      <DependentUpon>frmDescuentos.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Simple\frmDescuentoBancario\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmInteresSimple.resx">
-      <DependentUpon>frmInteresSimple.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Simple\frmInteres\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmMontoSimple.resx">
-      <DependentUpon>frmMontoSimple.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Simple\frmMontoSimple\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPanel.resx">
       <DependentUpon>frmPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Opciones\A\TasaEfectiva.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\A\TasaEfectiva.resx">
       <DependentUpon>TasaEfectiva.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Opciones\A\TasaNominal.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\A\TasaNominal.resx">
       <DependentUpon>TasaNominal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Opciones\B\TasaEfectiva.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\B\TasaEfectiva.resx">
       <DependentUpon>TasaEfectiva.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Opciones\B\TasaNominal.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\B\TasaNominal.resx">
       <DependentUpon>TasaNominal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Opciones\A\TotalPeriodos.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\A\TotalPeriodos.resx">
       <DependentUpon>TotalPeriodos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Opciones\B\TotalPeriodos.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\B\TotalPeriodos.resx">
       <DependentUpon>TotalPeriodos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Opciones\A\Tiempo.resx">
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\A\Tiempo.resx">
       <DependentUpon>Tiempo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -1,6 +1,6 @@
-﻿namespace Financiera.Formularios
+﻿namespace Financiera.Formularios.Compuesto.Interes
 {
-    partial class frmInteresCompuesto
+    partial class View
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInteresCompuesto));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(View));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbInteresCompuesto = new System.Windows.Forms.ComboBox();

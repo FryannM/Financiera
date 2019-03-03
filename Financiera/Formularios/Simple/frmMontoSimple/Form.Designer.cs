@@ -1,6 +1,6 @@
-﻿namespace Financiera.Formularios
+﻿namespace Financiera.Formularios.Simple.frmMontoSimple
 {
-    partial class frmMontoSimple
+    partial class Form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMontoSimple));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbMontoSimple = new System.Windows.Forms.ComboBox();

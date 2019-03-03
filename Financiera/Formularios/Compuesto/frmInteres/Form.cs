@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Financiera.Formularios
+namespace Financiera.Formularios.Compuesto.Interes
 {
-    public partial class frmInteresCompuesto : Form
+    public partial class View : Form
     {
         // Controles de usuario.
         private static Capital_A capital_A;
@@ -50,7 +50,7 @@ namespace Financiera.Formularios
             crearControles();
         }
 
-        public frmInteresCompuesto()
+        public View()
         {
             InitializeComponent();
         }
