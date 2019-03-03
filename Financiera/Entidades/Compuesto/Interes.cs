@@ -1,13 +1,59 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Financiera.Entidades.Compuesto
 {
-    /// <summary>
-    /// Provee métodos estáticos para hacer cálculos de interés compuesto en el formulario.
-    /// </summary>
-
+    /// <summary>Provee métodos estáticos para hacer cálculos de interés compuesto en el formulario.</summary>
     public static class Interes
     {
+
+        /// <summary> Provee métodos estáticos para hacer cálculos de equivalencia con otra tasa de interés compuesto. </summary>
+        public static class EquivalenciaCompuesta
+        {
+            /// <returns>Tasa nominal expresada en porcentaje.</returns>
+            public static decimal CalcularTasaNominal(IReadOnlyDictionary<decimal, Frecuencia> tasaCompuesta, Frecuencia frecuencia)
+            {
+                var m1 = Convert.ToDouble(frecuencia);
+                var j2 = Convert.ToDouble(tasaCompuesta.Keys.First());
+                var m2 = Convert.ToDouble(tasaCompuesta.Values.First());
+                return Convert.ToDecimal(m1 * (Math.Pow(1 + j2/m2, m2/m1) - 1) ) * 100; // m1[(1+j2/m2)^(m2/m1) - 1]
+            }
+
+            /// <returns>Tasa efectiva expresada en porcentaje.</returns>
+            public static decimal CalcularTasaEfectiva(decimal tasaNominal, Frecuencia frecuencia)
+            {
+                var j2 = Convert.ToDouble(tasaNominal);
+                var m2 = Convert.ToDouble(frecuencia);
+                return Convert.ToDecimal(Math.Pow(1 + j2/m2, m2) - 1 ) * 100; // (1 + j2/m2)^m2 - 1
+            }
+        }
+
+        /// <summary> Provee métodos estáticos para hacer cálculos de equivalencia con una tasa de interés simple. </summary>
+        public static class EquivalenciaSimple
+        {
+            /// <returns>Tasa simple expresada en porcentaje.</returns>
+            public static decimal CalcularTasaSimple(decimal tiempo, decimal tasa, decimal totalPeriodos)
+            {
+                var t = Convert.ToDouble(tiempo);
+                var i = Convert.ToDouble(tasa);
+                var n = Convert.ToDouble(totalPeriodos);
+
+                return Convert.ToDecimal((Math.Pow(1 + i, n) - 1) / t) * 100; // [(1 + i)^n - 1]/t
+            }
+
+            /// <returns>Tasa nominal expresada en porcentaje.</returns>
+            public static decimal CalcularTasaNominal(decimal tasa, decimal tiempo, Frecuencia frecuencia, decimal totalPeriodos)
+            {
+                var t = Convert.ToDouble(tiempo);
+                var i = Convert.ToDouble(tasa);
+                var m = Convert.ToDecimal(frecuencia);
+                var n = Convert.ToDouble(totalPeriodos);
+
+                return m * Convert.ToDecimal(Math.Pow(1 + i * t, 1/n) - 1) * 100; // m[(1 + it)^(1/n) - 1]
+            }
+        }
+
         public enum Frecuencia : ushort
         {
             Anual = 1, Semestral = 2, Cuatrimestral = 3, Trimestral = 4, Bimestral = 6,
@@ -32,11 +78,11 @@ namespace Financiera.Entidades.Compuesto
         public static decimal CalcularTasaNominal(Frecuencia periodo, decimal monto, decimal capital, decimal totalPeriodos)
             => Convert.ToDecimal(periodo) * CalcularTasaXPeriodo(monto, capital, totalPeriodos);
 
-        /// <returns>Tasa efectiva expresada en porcentaje.</returns>
+        /// <returns>Tasa de interés por período expresada en porcentaje.</returns>
         public static decimal CalcularTasaXPeriodo(decimal monto, decimal capital, decimal totalPeriodos) 
             => Convert.ToDecimal(Math.Pow(Convert.ToDouble(monto / capital), Convert.ToDouble(1 / totalPeriodos)) - 1) * 100;
 
-        /// <returns>Tasa efectiva expresada en porcentaje.</returns>
+        /// <returns>Tasa de interés por período expresada en porcentaje.</returns>
         public static decimal CalcularTasaXPeriodo(Frecuencia periodo, decimal tasaNominal)
             => tasaNominal / Convert.ToDecimal(periodo);
 
