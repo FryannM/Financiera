@@ -104,7 +104,7 @@
             this.txtResultado.BackColor = System.Drawing.SystemColors.Info;
             this.txtResultado.DecimalPlaces = 2;
             this.txtResultado.Enabled = false;
-            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultado.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResultado.Location = new System.Drawing.Point(173, 9);
             this.txtResultado.Maximum = new decimal(new int[] {
             -1,
@@ -112,7 +112,7 @@
             -1,
             0});
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(227, 35);
+            this.txtResultado.Size = new System.Drawing.Size(227, 29);
             this.txtResultado.TabIndex = 51;
             this.txtResultado.ThousandsSeparator = true;
             this.txtResultado.Value = new decimal(new int[] {
@@ -124,20 +124,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 8);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 36);
+            this.label4.Size = new System.Drawing.Size(88, 21);
             this.label4.TabIndex = 50;
             this.label4.Text = "Tiempo= t";
             // 
             // labelPeriodo
             // 
             this.labelPeriodo.AutoSize = true;
-            this.labelPeriodo.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPeriodo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPeriodo.Location = new System.Drawing.Point(433, 8);
             this.labelPeriodo.Name = "labelPeriodo";
-            this.labelPeriodo.Size = new System.Drawing.Size(101, 36);
+            this.labelPeriodo.Size = new System.Drawing.Size(62, 21);
             this.labelPeriodo.TabIndex = 123;
             this.labelPeriodo.Text = "Año(s)";
             // 
