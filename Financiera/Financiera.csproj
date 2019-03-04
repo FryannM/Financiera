@@ -86,6 +86,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Simple\Anualidad\PerpetuidadVencida.cs" />
+    <Compile Include="Entidades\Simple\Anualidad\PerpetuidadVencidaPagadera.cs" />
+    <Compile Include="Entidades\Simple\Anualidad\PerpetuidadAnticipada.cs" />
+    <Compile Include="Entidades\Simple\Anualidad\Anticipada.cs" />
+    <Compile Include="Entidades\Simple\Anualidad\Vencida.cs" />
     <Compile Include="Entidades\Simple\DescuentoBancario.cs" />
     <Compile Include="Entidades\Compuesto\Interes.cs" />
     <Compile Include="Entidades\Simple\Interes.cs" />
@@ -131,29 +136,209 @@
     <Compile Include="Formularios\Compuesto\frmInteres\B\Capital.Designer.cs">
       <DependentUpon>Capital.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Compuesto\frmInteres\frmInteresCompuestos.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Compuesto\frmInteres\frmInteresCompuestos.Designer.cs">
-      <DependentUpon>frmInteresCompuestos.cs</DependentUpon>
+    <Compile Include="Formularios\Compuesto\frmInteres\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Simple\frmDescuentoBancario\frmDescuentoSiemple.cs">
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencida\Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Simple\frmDescuentoBancario\frmDescuentoSiemple.Designer.cs">
-      <DependentUpon>frmDescuentoSiemple.cs</DependentUpon>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencida\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Simple\frmInteres\frm Intereses.cs">
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencida\Renta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencida\Renta.Designer.cs">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencida\TasaPeriodica.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencida\TasaPeriodica.Designer.cs">
+      <DependentUpon>TasaPeriodica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencida\ValorActual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencida\ValorActual.Designer.cs">
+      <DependentUpon>ValorActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencidaPagadera\Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Simple\frmInteres\frm Intereses.Designer.cs">
-      <DependentUpon>frm Intereses.cs</DependentUpon>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencidaPagadera\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Simple\frmMontoSimple\fromMontoSimple.cs">
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencidaPagadera\Renta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencidaPagadera\Renta.Designer.cs">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencidaPagadera\ValorActual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencidaPagadera\ValorActual.Designer.cs">
+      <DependentUpon>ValorActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Simple\frmMontoSimple\fromMontoSimple.Designer.cs">
-      <DependentUpon>fromMontoSimple.cs</DependentUpon>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\Renta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\Renta.Designer.cs">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\TasaPeriodica.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\TasaPeriodica.Designer.cs">
+      <DependentUpon>TasaPeriodica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\A\ValorActual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\A\ValorActual.Designer.cs">
+      <DependentUpon>ValorActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\B\ValorActual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\B\ValorActual.Designer.cs">
+      <DependentUpon>ValorActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\A\Renta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\A\Renta.Designer.cs">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\A\TotalPeriodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\A\TotalPeriodos.Designer.cs">
+      <DependentUpon>TotalPeriodos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\B\Renta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\B\Renta.Designer.cs">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\B\TotalPeriodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\B\TotalPeriodos.Designer.cs">
+      <DependentUpon>TotalPeriodos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\ValorActual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\ValorActual.Designer.cs">
+      <DependentUpon>ValorActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\Monto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmAnticipada\Monto.Designer.cs">
+      <DependentUpon>Monto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\A\InteresTotal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\A\InteresTotal.Designer.cs">
+      <DependentUpon>InteresTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\A\Renta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\A\Renta.Designer.cs">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\A\TotalPeriodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\A\TotalPeriodos.Designer.cs">
+      <DependentUpon>TotalPeriodos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\PrecioContado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\PrecioContado.Designer.cs">
+      <DependentUpon>PrecioContado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\B\InteresTotal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\B\InteresTotal.Designer.cs">
+      <DependentUpon>InteresTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\B\Renta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\B\Renta.Designer.cs">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\B\TotalPeriodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\B\TotalPeriodos.Designer.cs">
+      <DependentUpon>TotalPeriodos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\Inicial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\Inicial.Designer.cs">
+      <DependentUpon>Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\Monto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\Monto.Designer.cs">
+      <DependentUpon>Monto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\ValorActual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\Anualidad\frmVencida\ValorActual.Designer.cs">
+      <DependentUpon>ValorActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\frmDescuentoBancario\Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\frmDescuentoBancario\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\frmInteres\Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\frmInteres\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Simple\frmMontoSimple\Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Simple\frmMontoSimple\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmPanel.cs">
       <SubType>Form</SubType>
@@ -230,17 +415,101 @@
     <EmbeddedResource Include="Formularios\Compuesto\frmInteres\B\Capital.resx">
       <DependentUpon>Capital.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\frmInteresCompuestos.resx">
-      <DependentUpon>frmInteresCompuestos.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Simple\frmDescuentoBancario\frmDescuentoSiemple.resx">
-      <DependentUpon>frmDescuentoSiemple.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmPerpetuidadVencidaPagadera\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Simple\frmInteres\frm Intereses.resx">
-      <DependentUpon>frm Intereses.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmPerpetuidadVencida\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Simple\frmMontoSimple\fromMontoSimple.resx">
-      <DependentUpon>fromMontoSimple.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmPerpetuidadVencida\Renta.resx">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmPerpetuidadVencida\TasaPeriodica.resx">
+      <DependentUpon>TasaPeriodica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmPerpetuidadVencida\ValorActual.resx">
+      <DependentUpon>ValorActual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\Renta.resx">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\TasaPeriodica.resx">
+      <DependentUpon>TasaPeriodica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\A\ValorActual.resx">
+      <DependentUpon>ValorActual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmPerpetuidadAnticipada\B\ValorActual.resx">
+      <DependentUpon>ValorActual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmAnticipada\A\Renta.resx">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmAnticipada\A\TotalPeriodos.resx">
+      <DependentUpon>TotalPeriodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmAnticipada\B\Renta.resx">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmAnticipada\B\TotalPeriodos.resx">
+      <DependentUpon>TotalPeriodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmAnticipada\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmAnticipada\ValorActual.resx">
+      <DependentUpon>ValorActual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmAnticipada\Monto.resx">
+      <DependentUpon>Monto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmVencida\A\InteresTotal.resx">
+      <DependentUpon>InteresTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmVencida\A\Renta.resx">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmVencida\A\TotalPeriodos.resx">
+      <DependentUpon>TotalPeriodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmVencida\PrecioContado.resx">
+      <DependentUpon>PrecioContado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmVencida\B\InteresTotal.resx">
+      <DependentUpon>InteresTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmVencida\B\Renta.resx">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmVencida\B\TotalPeriodos.resx">
+      <DependentUpon>TotalPeriodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmVencida\Inicial.resx">
+      <DependentUpon>Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmVencida\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmVencida\Monto.resx">
+      <DependentUpon>Monto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\Anualidad\frmVencida\ValorActual.resx">
+      <DependentUpon>ValorActual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\frmDescuentoBancario\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\frmInteres\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Simple\frmMontoSimple\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPanel.resx">
       <DependentUpon>frmPanel.cs</DependentUpon>
@@ -274,6 +543,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -288,8 +558,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Img\" />
+    <None Include="Img\exit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

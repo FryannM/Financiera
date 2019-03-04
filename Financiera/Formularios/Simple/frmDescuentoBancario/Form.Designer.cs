@@ -1,6 +1,6 @@
 ﻿namespace Financiera.Formularios.Simple.frmDescuentoBancario
 {
-    partial class frmDescuentoSiemple
+    partial class Form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDescuentoSiemple));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbDescuentoBancario = new System.Windows.Forms.ComboBox();
@@ -370,7 +370,7 @@
             this.label4.TabIndex = 50;
             this.label4.Text = "Resultado";
             // 
-            // frmDescuentoSiemple
+            // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -380,7 +380,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.panelCampos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmDescuentoSiemple";
+            this.Name = "Form";
             this.Text = "frmDescuentos";
             this.panelCampos.ResumeLayout(false);
             this.panelCampos.PerformLayout();
