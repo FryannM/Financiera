@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Financiera
@@ -19,13 +12,13 @@ namespace Financiera
        
         private void BtnInteresSimple_Click(object sender, EventArgs e)
         {
-            Formularios.frmInteresSimple InteresSimple = new Formularios.frmInteresSimple();
+            var InteresSimple = new Formularios.Simple.frmInteres.Form();
             InteresSimple.Show();
         }
 
         private void BtnDescuentos_Click(object sender, EventArgs e)
         {
-            Formularios.frmDescuentos Descuento = new Formularios.frmDescuentos();
+            var Descuento = new Formularios.Simple.frmDescuentoBancario.Form();
             Descuento.Show();
         }
 
@@ -44,8 +37,14 @@ namespace Financiera
 
         private void btnMontoSimple_Click(object sender, EventArgs e)
         {
-            Formularios.frmMontoSimple montosimple = new Formularios.frmMontoSimple();
+            var montosimple = new Formularios.Simple.frmMontoSimple.Form();
             montosimple.Show();
+        }
+
+        private void btnInteresCompuesto_Click(object sender, EventArgs e)
+        {
+            var interesCompuesto = new Formularios.Simple.frmInteres.Form();
+            interesCompuesto.Show();
         }
     }
 }

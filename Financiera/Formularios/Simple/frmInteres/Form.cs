@@ -1,11 +1,11 @@
 ﻿using Financiera.Services;
 using System;
 using System.Windows.Forms;
+using Financiera.Entidades.Simple;
 
-
-namespace Financiera.Formularios
+namespace Financiera.Formularios.Simple.frmInteres
 {
-    public partial class frmInteresSimple : Form
+    public partial class Form : System.Windows.Forms.Form
     {
         public double result = 0;
         public  double capital;
@@ -13,16 +13,13 @@ namespace Financiera.Formularios
         public double tiempo;
         public  double interes;
 
-        private Entidades.InteresSimple entidad { get; set; } = new Entidades.InteresSimple();
+        private Interes entidad { get; set; } = new Interes();
 
 
-        public frmInteresSimple()
+        public Form()
         {
 
             InitializeComponent();
-        }
-        private void frmInteresSimple_Load(object sender, EventArgs e)
-        {
         }
         private void   SelectTasa()
         {
@@ -97,7 +94,7 @@ namespace Financiera.Formularios
         }
         private void EnableText(string cb)
         {
-
+            panelCampos.Visible = true;
           
             switch (cbInteresSimple.SelectedItem.ToString().Trim())
             {
@@ -119,11 +116,8 @@ namespace Financiera.Formularios
                     txtCapital.Enabled = false;
                     txtInteres.Enabled = true;
                     txtTasaInteres.Enabled = true;
-                    txtTiempo.Enabled = true;
 
 
-
-                    txtInteres.Visible = true;
                     btnInteres.Visible = false;
                     btnCapital.Visible = true;
                     btnTasaInteres.Visible = false;
@@ -133,8 +127,10 @@ namespace Financiera.Formularios
 
                 case "Tasa de Interes":
                     txtTasaInteres.Enabled = false;
+                    cbTipoTasa.Enabled = false;
                     txtCapital.Enabled = true;
                     txtInteres.Enabled = true;
+                    txtTiempo.Enabled = true;
 
                     btnInteres.Visible = false;
                     btnCapital.Visible = false;
@@ -147,6 +143,7 @@ namespace Financiera.Formularios
                 case "Tiempo":
                     txtTiempo.Enabled = false;
                     txtTasaInteres.Enabled = true;
+                    cbTipoTasa.Enabled = true;
                     txtCapital.Enabled = true;
                     txtInteres.Enabled = true;
 
@@ -209,7 +206,7 @@ namespace Financiera.Formularios
 
         private void btnCapital_Click(object sender, EventArgs e)
         {
-            interes = entidad.Interes = Convert.ToDouble(txtInteres.Text);
+            interes = entidad.Interes_ = Convert.ToDouble(txtInteres.Text);
             tasaInteres = entidad.TasaInteres = Convert.ToDouble(txtTasaInteres.Text);
             tiempo = entidad.Tiempo = Convert.ToDouble(txtTiempo.Text);
             result = CalcularServices.CalcularCapital(interes, tasaInteres, tiempo);
@@ -221,7 +218,7 @@ namespace Financiera.Formularios
 
         private void btnTasaInteres_Click(object sender, EventArgs e)
         {
-            interes = entidad.Interes = Convert.ToDouble(txtInteres.Text);
+            interes = entidad.Interes_ = Convert.ToDouble(txtInteres.Text);
             tiempo = entidad.Tiempo = Convert.ToDouble(txtTiempo.Text);
             capital = entidad.Capital = Convert.ToDouble(txtCapital.Text);
             result = CalcularServices.CalcularTasaInteres(interes, capital, tiempo);
@@ -233,7 +230,7 @@ namespace Financiera.Formularios
 
         private void btnTiempo_Click(object sender, EventArgs e)
         {
-            interes = entidad.Interes = Convert.ToDouble(txtInteres.Text);
+            interes = entidad.Interes_ = Convert.ToDouble(txtInteres.Text);
             tasaInteres = entidad.TasaInteres = Convert.ToDouble(txtTasaInteres.Text);
             capital = entidad.Capital = Convert.ToDouble(txtCapital.Text);
             result = CalcularServices.CalcularTiempo(interes, capital, tasaInteres );
