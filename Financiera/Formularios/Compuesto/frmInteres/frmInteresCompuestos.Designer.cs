@@ -84,7 +84,7 @@
             this.groupBoxOpciones.Controls.Add(this.radioButtonC);
             this.groupBoxOpciones.Controls.Add(this.radioButtonB);
             this.groupBoxOpciones.Controls.Add(this.radioButtonA);
-            this.groupBoxOpciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxOpciones.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxOpciones.Location = new System.Drawing.Point(175, 154);
             this.groupBoxOpciones.Name = "groupBoxOpciones";
             this.groupBoxOpciones.Size = new System.Drawing.Size(200, 57);
@@ -97,10 +97,10 @@
             // 
             this.radioButtonC.AutoSize = true;
             this.radioButtonC.Enabled = false;
-            this.radioButtonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonC.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonC.Location = new System.Drawing.Point(150, 27);
             this.radioButtonC.Name = "radioButtonC";
-            this.radioButtonC.Size = new System.Drawing.Size(38, 24);
+            this.radioButtonC.Size = new System.Drawing.Size(41, 25);
             this.radioButtonC.TabIndex = 4;
             this.radioButtonC.Text = "C";
             this.radioButtonC.UseVisualStyleBackColor = true;
@@ -109,10 +109,10 @@
             // radioButtonB
             // 
             this.radioButtonB.AutoSize = true;
-            this.radioButtonB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonB.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonB.Location = new System.Drawing.Point(87, 27);
             this.radioButtonB.Name = "radioButtonB";
-            this.radioButtonB.Size = new System.Drawing.Size(38, 24);
+            this.radioButtonB.Size = new System.Drawing.Size(40, 25);
             this.radioButtonB.TabIndex = 3;
             this.radioButtonB.Text = "B";
             this.radioButtonB.UseVisualStyleBackColor = true;
@@ -121,10 +121,10 @@
             // radioButtonA
             // 
             this.radioButtonA.AutoSize = true;
-            this.radioButtonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonA.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonA.Location = new System.Drawing.Point(21, 27);
             this.radioButtonA.Name = "radioButtonA";
-            this.radioButtonA.Size = new System.Drawing.Size(38, 24);
+            this.radioButtonA.Size = new System.Drawing.Size(41, 25);
             this.radioButtonA.TabIndex = 2;
             this.radioButtonA.Text = "A";
             this.radioButtonA.UseVisualStyleBackColor = true;
@@ -138,7 +138,7 @@
             this.panelResultante.Size = new System.Drawing.Size(742, 272);
             this.panelResultante.TabIndex = 38;
             // 
-            // frmInteresCompuesto
+            // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -149,7 +149,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblTitulo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmInteresCompuesto";
+            this.Name = "View";
             this.Text = "frmInteresCompuesto";
             this.groupBoxOpciones.ResumeLayout(false);
             this.groupBoxOpciones.PerformLayout();

@@ -131,11 +131,11 @@
     <Compile Include="Formularios\Compuesto\frmInteres\B\Capital.Designer.cs">
       <DependentUpon>Capital.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Compuesto\frmInteres\Form.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\frmInteresCompuestos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Compuesto\frmInteres\Form.Designer.cs">
-      <DependentUpon>Form.cs</DependentUpon>
+    <Compile Include="Formularios\Compuesto\frmInteres\frmInteresCompuestos.Designer.cs">
+      <DependentUpon>frmInteresCompuestos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Simple\frmDescuentoBancario\frmDescuentoSiemple.cs">
       <SubType>Form</SubType>
@@ -230,8 +230,8 @@
     <EmbeddedResource Include="Formularios\Compuesto\frmInteres\B\Capital.resx">
       <DependentUpon>Capital.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\Form.resx">
-      <DependentUpon>Form.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\frmInteresCompuestos.resx">
+      <DependentUpon>frmInteresCompuestos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Simple\frmDescuentoBancario\frmDescuentoSiemple.resx">
       <DependentUpon>frmDescuentoSiemple.cs</DependentUpon>
