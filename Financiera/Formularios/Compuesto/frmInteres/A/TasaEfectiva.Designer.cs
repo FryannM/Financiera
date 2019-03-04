@@ -66,17 +66,17 @@
             this.panelResultado.Controls.Add(this.label1);
             this.panelResultado.Location = new System.Drawing.Point(74, 159);
             this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(385, 41);
+            this.panelResultado.Size = new System.Drawing.Size(293, 40);
             this.panelResultado.TabIndex = 106;
             this.panelResultado.Visible = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(227, 36);
+            this.label4.Size = new System.Drawing.Size(135, 21);
             this.label4.TabIndex = 52;
             this.label4.Text = "Tasa Efectiva = i";
             // 
@@ -85,8 +85,8 @@
             this.txtResultado.BackColor = System.Drawing.SystemColors.Info;
             this.txtResultado.DecimalPlaces = 2;
             this.txtResultado.Enabled = false;
-            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultado.Location = new System.Drawing.Point(236, 3);
+            this.txtResultado.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultado.Location = new System.Drawing.Point(144, 3);
             this.txtResultado.Maximum = new decimal(new int[] {
             -1,
             -1,
@@ -98,7 +98,7 @@
             -1,
             -2147483648});
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(94, 35);
+            this.txtResultado.Size = new System.Drawing.Size(94, 29);
             this.txtResultado.TabIndex = 53;
             this.txtResultado.ThousandsSeparator = true;
             this.txtResultado.Value = new decimal(new int[] {
@@ -111,7 +111,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(336, 0);
+            this.label1.Location = new System.Drawing.Point(244, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 40);
             this.label1.TabIndex = 54;

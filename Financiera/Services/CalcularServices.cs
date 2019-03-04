@@ -15,8 +15,6 @@
             var capital = interes / cap;
             return capital;
         }
-
-
         public static double CalcularTasaInteres(double interes, double capital, double tiempo)
         {
             var CapitalxTiempo = capital * tiempo;

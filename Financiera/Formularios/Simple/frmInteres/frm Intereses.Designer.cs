@@ -33,6 +33,10 @@
             this.cbInteresSimple = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panelCampos = new System.Windows.Forms.Panel();
+            this.btnInteres = new System.Windows.Forms.Button();
+            this.btnTiempo = new System.Windows.Forms.Button();
+            this.btnTasaInteres = new System.Windows.Forms.Button();
+            this.btnCapital = new System.Windows.Forms.Button();
             this.txtTiempo = new System.Windows.Forms.NumericUpDown();
             this.txtTasaInteres = new System.Windows.Forms.NumericUpDown();
             this.txtCapital = new System.Windows.Forms.NumericUpDown();
@@ -46,10 +50,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblcapital = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnInteres = new System.Windows.Forms.Button();
-            this.btnTiempo = new System.Windows.Forms.Button();
-            this.btnTasaInteres = new System.Windows.Forms.Button();
-            this.btnCapital = new System.Windows.Forms.Button();
             this.panelCampos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTiempo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTasaInteres)).BeginInit();
@@ -70,7 +70,7 @@
             // cbInteresSimple
             // 
             this.cbInteresSimple.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbInteresSimple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbInteresSimple.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbInteresSimple.FormattingEnabled = true;
             this.cbInteresSimple.Items.AddRange(new object[] {
             "Interes Simple",
@@ -79,7 +79,7 @@
             "Tiempo"});
             this.cbInteresSimple.Location = new System.Drawing.Point(244, 57);
             this.cbInteresSimple.Name = "cbInteresSimple";
-            this.cbInteresSimple.Size = new System.Drawing.Size(187, 28);
+            this.cbInteresSimple.Size = new System.Drawing.Size(187, 29);
             this.cbInteresSimple.TabIndex = 7;
             this.cbInteresSimple.SelectedIndexChanged += new System.EventHandler(this.cbInteresSimple_SelectedIndexChanged);
             // 
@@ -117,6 +117,46 @@
             this.panelCampos.Size = new System.Drawing.Size(516, 277);
             this.panelCampos.TabIndex = 24;
             this.panelCampos.Visible = false;
+            // 
+            // btnInteres
+            // 
+            this.btnInteres.Location = new System.Drawing.Point(401, 207);
+            this.btnInteres.Name = "btnInteres";
+            this.btnInteres.Size = new System.Drawing.Size(90, 51);
+            this.btnInteres.TabIndex = 40;
+            this.btnInteres.Text = "Interes";
+            this.btnInteres.UseVisualStyleBackColor = true;
+            this.btnInteres.Click += new System.EventHandler(this.btnInteres_Click);
+            // 
+            // btnTiempo
+            // 
+            this.btnTiempo.Location = new System.Drawing.Point(402, 207);
+            this.btnTiempo.Name = "btnTiempo";
+            this.btnTiempo.Size = new System.Drawing.Size(90, 51);
+            this.btnTiempo.TabIndex = 39;
+            this.btnTiempo.Text = "Tiempo";
+            this.btnTiempo.UseVisualStyleBackColor = true;
+            this.btnTiempo.Click += new System.EventHandler(this.btnTiempo_Click);
+            // 
+            // btnTasaInteres
+            // 
+            this.btnTasaInteres.Location = new System.Drawing.Point(403, 207);
+            this.btnTasaInteres.Name = "btnTasaInteres";
+            this.btnTasaInteres.Size = new System.Drawing.Size(90, 51);
+            this.btnTasaInteres.TabIndex = 38;
+            this.btnTasaInteres.Text = "Tasa Interes";
+            this.btnTasaInteres.UseVisualStyleBackColor = true;
+            this.btnTasaInteres.Click += new System.EventHandler(this.btnTasaInteres_Click);
+            // 
+            // btnCapital
+            // 
+            this.btnCapital.Location = new System.Drawing.Point(400, 207);
+            this.btnCapital.Name = "btnCapital";
+            this.btnCapital.Size = new System.Drawing.Size(90, 51);
+            this.btnCapital.TabIndex = 37;
+            this.btnCapital.Text = "Capital";
+            this.btnCapital.UseVisualStyleBackColor = true;
+            this.btnCapital.Click += new System.EventHandler(this.btnCapital_Click);
             // 
             // txtTiempo
             // 
@@ -303,47 +343,7 @@
             this.label2.TabIndex = 25;
             this.label2.Text = "Interes = I";
             // 
-            // btnInteres
-            // 
-            this.btnInteres.Location = new System.Drawing.Point(401, 207);
-            this.btnInteres.Name = "btnInteres";
-            this.btnInteres.Size = new System.Drawing.Size(90, 51);
-            this.btnInteres.TabIndex = 40;
-            this.btnInteres.Text = "Interes";
-            this.btnInteres.UseVisualStyleBackColor = true;
-            this.btnInteres.Click += new System.EventHandler(this.btnInteres_Click);
-            // 
-            // btnTiempo
-            // 
-            this.btnTiempo.Location = new System.Drawing.Point(402, 207);
-            this.btnTiempo.Name = "btnTiempo";
-            this.btnTiempo.Size = new System.Drawing.Size(90, 51);
-            this.btnTiempo.TabIndex = 39;
-            this.btnTiempo.Text = "Tiempo";
-            this.btnTiempo.UseVisualStyleBackColor = true;
-            this.btnTiempo.Click += new System.EventHandler(this.btnTiempo_Click);
-            // 
-            // btnTasaInteres
-            // 
-            this.btnTasaInteres.Location = new System.Drawing.Point(403, 207);
-            this.btnTasaInteres.Name = "btnTasaInteres";
-            this.btnTasaInteres.Size = new System.Drawing.Size(90, 51);
-            this.btnTasaInteres.TabIndex = 38;
-            this.btnTasaInteres.Text = "Tasa Interes";
-            this.btnTasaInteres.UseVisualStyleBackColor = true;
-            this.btnTasaInteres.Click += new System.EventHandler(this.btnTasaInteres_Click);
-            // 
-            // btnCapital
-            // 
-            this.btnCapital.Location = new System.Drawing.Point(400, 207);
-            this.btnCapital.Name = "btnCapital";
-            this.btnCapital.Size = new System.Drawing.Size(90, 51);
-            this.btnCapital.TabIndex = 37;
-            this.btnCapital.Text = "Capital";
-            this.btnCapital.UseVisualStyleBackColor = true;
-            this.btnCapital.Click += new System.EventHandler(this.btnCapital_Click);
-            // 
-            // frmInteresSimple
+            // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -353,7 +353,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.panelCampos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmInteresSimple";
+            this.Name = "Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InteresSimple";
             this.panelCampos.ResumeLayout(false);

@@ -24,6 +24,18 @@ namespace Financiera.util
             {
                 e.Handled = true;
             }
+
+
+        }
+
+         public   static string  ValidarCampoVacio(string Name)
+        { 
+             if (string.IsNullOrEmpty(Name))
+            {
+                  MessageBox.Show("No Pueden Haber Campo Vacio");
+            }
+
+            return "No Pueden Haber Campo Vacio";
         }
     }
 }
