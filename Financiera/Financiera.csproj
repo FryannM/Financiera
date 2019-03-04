@@ -136,11 +136,11 @@
     <Compile Include="Formularios\Compuesto\frmInteres\B\Capital.Designer.cs">
       <DependentUpon>Capital.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Compuesto\frmInteres\Form.cs">
+    <Compile Include="Formularios\Compuesto\frmInteres\frmInteresCompuestos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Compuesto\frmInteres\Form.Designer.cs">
-      <DependentUpon>Form.cs</DependentUpon>
+    <Compile Include="Formularios\Compuesto\frmInteres\frmInteresCompuestos.Designer.cs">
+      <DependentUpon>frmInteresCompuestos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Simple\Anualidad\frmPerpetuidadVencida\Form.cs">
       <SubType>Form</SubType>
@@ -323,22 +323,23 @@
       <DependentUpon>ValorActual.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Simple\frmDescuentoBancario\Form.cs">
+    <Compile Include="Formularios\Simple\frmDescuentoBancario\frmDescuentoSiemple.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Simple\frmDescuentoBancario\Form.Designer.cs">
-      <DependentUpon>Form.cs</DependentUpon>
+    <Compile Include="Formularios\Simple\frmDescuentoBancario\frmDescuentoSiemple.Designer.cs">
+      <DependentUpon>frmDescuentoSiemple.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Simple\frmInteres\Form.cs">
+    <Compile Include="Formularios\Simple\frmInteres\frm Intereses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Simple\frmInteres\Form.Designer.cs">
-      <DependentUpon>Form.cs</DependentUpon>
+    <Compile Include="Formularios\Simple\frmInteres\frm Intereses.Designer.cs">
+      <DependentUpon>frm Intereses.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Simple\frmMontoSimple\Form.cs">
+    <Compile Include="Formularios\Simple\frmMontoSimple\fromMontoSimple.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Simple\frmMontoSimple\Form.Designer.cs">
-      <DependentUpon>Form.cs</DependentUpon>
+    <Compile Include="Formularios\Simple\frmMontoSimple\fromMontoSimple.Designer.cs">
+      <DependentUpon>fromMontoSimple.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmPanel.cs">
       <SubType>Form</SubType>
@@ -415,8 +416,8 @@
     <EmbeddedResource Include="Formularios\Compuesto\frmInteres\B\Capital.resx">
       <DependentUpon>Capital.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\Form.resx">
-      <DependentUpon>Form.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Compuesto\frmInteres\frmInteresCompuestos.resx">
+      <DependentUpon>frmInteresCompuestos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Simple\Anualidad\frmPerpetuidadVencidaPagadera\Form.resx">
       <DependentUpon>Form.cs</DependentUpon>
@@ -504,12 +505,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Simple\frmDescuentoBancario\Form.resx">
       <DependentUpon>Form.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Simple\frmDescuentoBancario\frmDescuentoSiemple.resx">
+      <DependentUpon>frmDescuentoSiemple.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Simple\frmInteres\Form.resx">
-      <DependentUpon>Form.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Simple\frmInteres\frm Intereses.resx">
+      <DependentUpon>frm Intereses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Simple\frmMontoSimple\Form.resx">
-      <DependentUpon>Form.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Simple\frmMontoSimple\fromMontoSimple.resx">
+      <DependentUpon>fromMontoSimple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPanel.resx">
       <DependentUpon>frmPanel.cs</DependentUpon>

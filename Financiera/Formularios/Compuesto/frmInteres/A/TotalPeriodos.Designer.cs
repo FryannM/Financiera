@@ -166,17 +166,17 @@
             this.panelResultado.Controls.Add(this.txtResultado);
             this.panelResultado.Location = new System.Drawing.Point(71, 115);
             this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(525, 41);
+            this.panelResultado.Size = new System.Drawing.Size(414, 35);
             this.panelResultado.TabIndex = 129;
             this.panelResultado.Visible = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(286, 36);
+            this.label4.Size = new System.Drawing.Size(175, 21);
             this.label4.TabIndex = 52;
             this.label4.Text = "Total de Períodos = n";
             // 
@@ -185,15 +185,15 @@
             this.txtResultado.BackColor = System.Drawing.SystemColors.Info;
             this.txtResultado.DecimalPlaces = 2;
             this.txtResultado.Enabled = false;
-            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultado.Location = new System.Drawing.Point(295, 3);
+            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultado.Location = new System.Drawing.Point(184, 3);
             this.txtResultado.Maximum = new decimal(new int[] {
             -1,
             -1,
             -1,
             0});
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(227, 35);
+            this.txtResultado.Size = new System.Drawing.Size(227, 29);
             this.txtResultado.TabIndex = 53;
             this.txtResultado.ThousandsSeparator = true;
             this.txtResultado.Value = new decimal(new int[] {

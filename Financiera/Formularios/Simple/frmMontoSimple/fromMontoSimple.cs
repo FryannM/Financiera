@@ -2,9 +2,9 @@
 
 namespace Financiera.Formularios.Simple.frmMontoSimple
 {
-    public partial class Form : System.Windows.Forms.Form
+    public partial class fromMontoSimple : System.Windows.Forms.Form
     {
-        public Form()
+        public fromMontoSimple()
         {
             InitializeComponent();
         }
