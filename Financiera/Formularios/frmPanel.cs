@@ -37,7 +37,7 @@ namespace Financiera
 
         private void btnMontoSimple_Click(object sender, EventArgs e)
         {
-            var montosimple = new Formularios.Simple.frmMontoSimple.Form();
+            var montosimple = new Formularios.Simple.frmMontoSimple.fromMontoSimple();
             montosimple.Show();
         }
 
