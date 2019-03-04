@@ -46,5 +46,36 @@ namespace Financiera
             var interesCompuesto = new Formularios.Simple.frmInteres.Form();
             interesCompuesto.Show();
         }
+
+
+        private void btnPerpetuidadVencida_Click(object sender, EventArgs e)
+        {
+            var perpetuidadVencida = new Formularios.Simple.Anualidad.frmPerpetuidadVencida.Form();
+            perpetuidadVencida.Show();
+        }
+
+        private void btnPerpetuidadVencidaPagadera_Click(object sender, EventArgs e)
+        {
+            var perpetuidadVencidaPagadera = new Formularios.Simple.Anualidad.frmPerpetuidadVencidaPagadera.Form();
+            perpetuidadVencidaPagadera.Show();
+        }
+
+        private void btnPerpetualidadAnticipada_Click(object sender, EventArgs e)
+        {
+            var perpetuidadAnticipada = new Formularios.Simple.Anualidad.frmPerpetuidadAnticipada.Form();
+            perpetuidadAnticipada.Show();
+        }
+
+        private void btnAnticipada_Click(object sender, EventArgs e)
+        {
+            var anticipada = new Formularios.Simple.Anualidad.frmAnticipada.Form();
+            anticipada.Show();
+        }
+        
+        private void btnVencida_Click(object sender, EventArgs e)
+        {
+            var vencida = new Formularios.Simple.Anualidad.frmVencida.Form();
+            vencida.Show();
+        }
     }
 }
