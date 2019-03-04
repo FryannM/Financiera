@@ -173,8 +173,6 @@ namespace Financiera.Formularios.Simple.frmInteres
         private void btnInteres_Click(object sender, EventArgs e)
         {
            
-
-        
                 result = CalcularServices.CalcularInteres(capital,tasaInteres,tiempo);
                capital = entidad.Capital = Convert.ToDouble(txtCapital.Text);
             tasaInteres = entidad.TasaInteres = Convert.ToDouble(txtTasaInteres.Text);

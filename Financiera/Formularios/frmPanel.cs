@@ -18,7 +18,7 @@ namespace Financiera
 
         private void BtnDescuentos_Click(object sender, EventArgs e)
         {
-            var Descuento = new Formularios.Simple.frmDescuentoBancario.Form();
+            var Descuento = new Formularios.Simple.frmDescuentoBancario.frmDescuentoSiemple();
             Descuento.Show();
         }
 
