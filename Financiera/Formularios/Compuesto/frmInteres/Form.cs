@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace Financiera.Formularios.Compuesto.Interes
 {
-    public partial class View : Form
+    public partial class Form : System.Windows.Forms.Form
     {
         // Controles de usuario.
         private static Capital_A capital_A;
@@ -50,7 +50,7 @@ namespace Financiera.Formularios.Compuesto.Interes
             crearControles();
         }
 
-        public View()
+        public Form()
         {
             InitializeComponent();
         }

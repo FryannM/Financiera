@@ -1,6 +1,6 @@
 ﻿namespace Financiera.Formularios.Compuesto.Interes
 {
-    partial class View
+    partial class Form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(View));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbInteresCompuesto = new System.Windows.Forms.ComboBox();
@@ -138,7 +138,7 @@
             this.panelResultante.Size = new System.Drawing.Size(742, 272);
             this.panelResultante.TabIndex = 38;
             // 
-            // View
+            // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -149,7 +149,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblTitulo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "View";
+            this.Name = "Form";
             this.Text = "frmInteresCompuesto";
             this.groupBoxOpciones.ResumeLayout(false);
             this.groupBoxOpciones.PerformLayout();

@@ -18,7 +18,7 @@ namespace Financiera
 
         private void BtnDescuentos_Click(object sender, EventArgs e)
         {
-            var Descuento = new Formularios.Simple.frmDescuentoBancario.frmDescuentoSiemple();
+            var Descuento = new Formularios.Simple.frmDescuentoBancario.Form();
             Descuento.Show();
         }
 
@@ -37,14 +37,45 @@ namespace Financiera
 
         private void btnMontoSimple_Click(object sender, EventArgs e)
         {
-            var montosimple = new Formularios.Simple.frmMontoSimple.fromMontoSimple();
+            var montosimple = new Formularios.Simple.frmMontoSimple.Form();
             montosimple.Show();
         }
 
         private void btnInteresCompuesto_Click(object sender, EventArgs e)
         {
-            var interesCompuesto = new Formularios.Simple.frmInteres.Form();
+            var interesCompuesto = new Formularios.Compuesto.Interes.Form();
             interesCompuesto.Show();
+        }
+
+
+        private void btnPerpetuidadVencida_Click(object sender, EventArgs e)
+        {
+            var perpetuidadVencida = new Formularios.Simple.Anualidad.frmPerpetuidadVencida.Form();
+            perpetuidadVencida.Show();
+        }
+
+        private void btnPerpetuidadVencidaPagadera_Click(object sender, EventArgs e)
+        {
+            var perpetuidadVencidaPagadera = new Formularios.Simple.Anualidad.frmPerpetuidadVencidaPagadera.Form();
+            perpetuidadVencidaPagadera.Show();
+        }
+
+        private void btnPerpetualidadAnticipada_Click(object sender, EventArgs e)
+        {
+            var perpetuidadAnticipada = new Formularios.Simple.Anualidad.frmPerpetuidadAnticipada.Form();
+            perpetuidadAnticipada.Show();
+        }
+
+        private void btnAnticipada_Click(object sender, EventArgs e)
+        {
+            var anticipada = new Formularios.Simple.Anualidad.frmAnticipada.Form();
+            anticipada.Show();
+        }
+        
+        private void btnVencida_Click(object sender, EventArgs e)
+        {
+            var vencida = new Formularios.Simple.Anualidad.frmVencida.Form();
+            vencida.Show();
         }
     }
 }

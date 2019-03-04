@@ -4,14 +4,14 @@ using Financiera.Entidades.Simple;
 
 namespace Financiera.Formularios.Simple.frmDescuentoBancario
 {
-    public partial class frmDescuentoSiemple : System.Windows.Forms.Form
+    public partial class Form : System.Windows.Forms.Form
     {
         private decimal sumaSolicitada;
         private decimal tasaDescuento;
         private decimal tiempo;
         private decimal descuento;
 
-        public frmDescuentoSiemple()
+        public Form()
         {
             InitializeComponent();
         }
