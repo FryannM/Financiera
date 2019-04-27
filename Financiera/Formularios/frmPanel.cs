@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Financiera.Formularios;
 
 namespace Financiera
 {
@@ -76,6 +77,61 @@ namespace Financiera
         {
             var vencida = new Formularios.Simple.Anualidad.frmVencida.Form();
             vencida.Show();
+        }
+
+        private void simpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmSimple = new Formularios.Simple.frmInteres.Form();
+            frmSimple.Show();
+        }
+
+        private void montoSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmMontoSimple = new Formularios.Simple.frmMontoSimple.Form();
+            frmMontoSimple.Show();
+        }
+
+        private void compuestoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmInteresCompleto = new Formularios.Compuesto.Interes.Form();
+            frmInteresCompleto.Show();
+        }
+
+        private void descuentoSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmDescuentoSimple = new Formularios.Simple.frmDescuentoBancario.Form();
+            frmDescuentoSimple.Show();
+
+        }
+
+        private void anualidadAnticipadaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmAnualidadAnticipadaSimple = new Formularios.Simple.Anualidad.frmAnticipada.Form();
+            frmAnualidadAnticipadaSimple.Show();
+        }
+
+        private void anualiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmvencidadSimple = new Formularios.Simple.Anualidad.frmVencida.Form();
+            frmvencidadSimple.Show();
+        }
+
+        private void anualidadConPerpetuidadAnticipadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmanualidadPerpetuidadAnticipada = new Formularios.Simple.Anualidad.frmPerpetuidadAnticipada.Form();
+            frmanualidadPerpetuidadAnticipada.Show();
+        }
+
+        private void anualidadConPerpetuidadVencidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmanuliadaConperpetuidadVenciada = new Formularios.Simple.Anualidad.frmPerpetuidadVencida.Form();
+            frmanuliadaConperpetuidadVenciada.Show();
+        }
+
+        private void anualidadConPerpetuidadVencidaPagaderaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmanualidadPerpetuidaVencidaPagadera = new Formularios.Simple.Anualidad.frmPerpetuidadVencidaPagadera.Form();
+            frmanualidadPerpetuidaVencidaPagadera.Show();
         }
     }
 }
