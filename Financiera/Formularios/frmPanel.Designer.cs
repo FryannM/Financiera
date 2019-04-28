@@ -170,7 +170,7 @@
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnExit.Image = global::Financiera.Properties.Resources.exit;
-            this.btnExit.Location = new System.Drawing.Point(869, 456);
+            this.btnExit.Location = new System.Drawing.Point(882, 456);
             this.btnExit.Name = "btnExit";
             this.btnExit.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnExit.Size = new System.Drawing.Size(113, 99);
@@ -324,7 +324,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmPanel";
-            this.Opacity = 0.97D;
+            this.Opacity = 0.96D;
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Financiera";

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financiera", "Financiera\Financiera.csproj", "{792B65E1-AC6B-4648-88CE-5108EB76CA67}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FinancieraMath1430", "FinancieraMath1430\FinancieraMath1430.vdproj", "{A1861B96-1605-4B29-9312-03B2304A5E59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{792B65E1-AC6B-4648-88CE-5108EB76CA67}.Release|x64.Build.0 = Release|x64
 		{792B65E1-AC6B-4648-88CE-5108EB76CA67}.Release|x86.ActiveCfg = Release|x86
 		{792B65E1-AC6B-4648-88CE-5108EB76CA67}.Release|x86.Build.0 = Release|x86
+		{A1861B96-1605-4B29-9312-03B2304A5E59}.Debug|Any CPU.ActiveCfg = Debug
+		{A1861B96-1605-4B29-9312-03B2304A5E59}.Debug|x64.ActiveCfg = Debug
+		{A1861B96-1605-4B29-9312-03B2304A5E59}.Debug|x86.ActiveCfg = Debug
+		{A1861B96-1605-4B29-9312-03B2304A5E59}.Release|Any CPU.ActiveCfg = Release
+		{A1861B96-1605-4B29-9312-03B2304A5E59}.Release|x64.ActiveCfg = Release
+		{A1861B96-1605-4B29-9312-03B2304A5E59}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
